@@ -93,10 +93,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get logout => 'Odhlásiť sa';
 
   @override
-  String get free_limit_reached => 'Dosiahol si limit 10 záznamov. Prejdi na platenú verziu.';
-
-  @override
-  String get upgrade_to_premium => 'Prejsť na Premium';
+  String get free_limit_reached => 'Dosiahol si limit 50 záznamov pre túto kategóriu.';
 
   @override
   String get export_csv => 'Exportovať CSV';

@@ -1,6 +1,6 @@
 class AppConstants {
-  // Free tier limit
-  static const int freeTierLimit = 10;
+  // Limit záznamov na kategóriu
+  static const int freeTierLimit = 50;
 
   // Podporované meny
   static const List<String> currencies = ['EUR', 'CZK', 'GBP'];

@@ -93,10 +93,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get logout => 'Abmelden';
 
   @override
-  String get free_limit_reached => 'Du hast das Limit von 10 Einträgen erreicht. Wechsle zur Premium-Version.';
-
-  @override
-  String get upgrade_to_premium => 'Auf Premium upgraden';
+  String get free_limit_reached => 'Du hast das Limit von 50 Einträgen erreicht.';
 
   @override
   String get export_csv => 'CSV exportieren';

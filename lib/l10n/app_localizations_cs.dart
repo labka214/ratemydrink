@@ -93,10 +93,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get logout => 'Odhlásit se';
 
   @override
-  String get free_limit_reached => 'Dosáhl jsi limit 10 záznamů. Přejdi na placenou verzi.';
-
-  @override
-  String get upgrade_to_premium => 'Přejít na Premium';
+  String get free_limit_reached => 'Dosáhl jsi limit 50 záznamů.';
 
   @override
   String get export_csv => 'Exportovat CSV';

@@ -124,22 +124,17 @@ class _DrinkFormScreenState extends State<DrinkFormScreen> {
       return;
     }
 
-    // Free tier kontrola (iba pri novom zázname)
+    // Limit kontrola (iba pri novom zázname)
     if (!_isEditing) {
-      final isPaid = false; // TODO: napojíme na in_app_purchase
-      final count = drinksProvider.drinks
+      final count = drinksProvider.allDrinks
           .where((d) => d.type == widget.drinkType)
           .length;
-      if (!isPaid && count >= AppConstants.freeTierLimit) {
+      if (count >= AppConstants.freeTierLimit) {
         setState(() => _isSaving = false);
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(AppLocalizations.of(context)!.free_limit_reached),
-              action: SnackBarAction(
-                label: AppLocalizations.of(context)!.upgrade_to_premium,
-                onPressed: () {},
-              ),
             ),
           );
         }

@@ -270,14 +270,8 @@ abstract class AppLocalizations {
   /// No description provided for @free_limit_reached.
   ///
   /// In en, this message translates to:
-  /// **'You have reached the limit of 10 records. Upgrade to the paid version.'**
+  /// **'You have reached the limit of 50 records.'**
   String get free_limit_reached;
-
-  /// No description provided for @upgrade_to_premium.
-  ///
-  /// In en, this message translates to:
-  /// **'Upgrade to Premium'**
-  String get upgrade_to_premium;
 
   /// No description provided for @export_csv.
   ///

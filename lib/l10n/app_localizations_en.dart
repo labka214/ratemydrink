@@ -93,10 +93,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get logout => 'Sign out';
 
   @override
-  String get free_limit_reached => 'You have reached the limit of 10 records. Upgrade to the paid version.';
-
-  @override
-  String get upgrade_to_premium => 'Upgrade to Premium';
+  String get free_limit_reached => 'You have reached the limit of 50 records.';
 
   @override
   String get export_csv => 'Export CSV';
