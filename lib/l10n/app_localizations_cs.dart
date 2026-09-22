@@ -135,6 +135,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get support_thank_you => 'Děkujeme, že používáš RateMyDrink! Tato aplikace je pro všechny zdarma. Tvůj příspěvek pomáhá pokrýt náklady na cloudové úložiště a udržet aplikaci v provozu.';
 
   @override
+  String get support_description => 'RateMyDrink je bezplatná aplikace vyvíjená ve volném čase s láskou k dobrým nápojům.';
+
+  @override
+  String get support_visit_page => 'Přejít na stránku projektu';
+
+  @override
   String get support_donate_2 => '€2';
 
   @override

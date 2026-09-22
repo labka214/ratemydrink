@@ -351,6 +351,18 @@ abstract class AppLocalizations {
   /// **'Thank you for using RateMyDrink! This app is free for everyone. Your donation helps cover the cost of cloud storage and keeps the app running.'**
   String get support_thank_you;
 
+  /// No description provided for @support_description.
+  ///
+  /// In en, this message translates to:
+  /// **'RateMyDrink is a free app developed in spare time with a passion for great drinks.'**
+  String get support_description;
+
+  /// No description provided for @support_visit_page.
+  ///
+  /// In en, this message translates to:
+  /// **'Visit the project page'**
+  String get support_visit_page;
+
   /// No description provided for @support_donate_2.
   ///
   /// In en, this message translates to:

@@ -135,6 +135,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get support_thank_you => 'Danke, dass du RateMyDrink nutzt! Diese App ist für alle kostenlos. Deine Spende hilft, die Kosten für Cloud-Speicher zu decken und die App am Laufen zu halten.';
 
   @override
+  String get support_description => 'RateMyDrink ist eine kostenlose App, die in der Freizeit mit Leidenschaft für gute Getränke entwickelt wird.';
+
+  @override
+  String get support_visit_page => 'Zur Projektseite';
+
+  @override
   String get support_donate_2 => '€2';
 
   @override

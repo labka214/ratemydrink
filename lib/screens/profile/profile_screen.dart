@@ -175,42 +175,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  Future<void> _showLanguageDialog() async {
-    const options = [
-      ('sk', '🇸🇰', 'Slovenčina'),
-      ('cs', '🇨🇿', 'Čeština'),
-      ('en', '🇬🇧', 'English'),
-      ('de', '🇩🇪', 'Deutsch'),
-    ];
-
-    final selected = await showDialog<String>(
-      context: context,
-      builder: (ctx) => SimpleDialog(
-        backgroundColor: AppColors.surface,
-        title: Text(
-          AppLocalizations.of(ctx)!.profile_language,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        children: options
-            .map(
-              (o) => SimpleDialogOption(
-                onPressed: () => Navigator.of(ctx).pop(o.$1),
-                child: Text(
-                  '${o.$2}  ${o.$3}',
-                  style: const TextStyle(
-                      color: AppColors.textPrimary, fontSize: 16),
-                ),
-              ),
-            )
-            .toList(),
-      ),
-    );
-
-    if (selected != null && mounted) {
-      await context.read<SettingsProvider>().setLocale(selected);
-    }
-  }
-
   Widget _buildAvatar(User? user) {
     final photoUrl = user?.photoURL;
     return CircleAvatar(
@@ -374,7 +338,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 final sorted = _sortedAchievementsForDisplay();
                 final visibleCount = min(7, sorted.length);
                 return SizedBox(
-                  height: 100,
+                  height: 128,
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     itemCount: visibleCount,
@@ -395,9 +359,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 );
               }),
             ],
-            const SizedBox(height: 24),
-            _LanguageRow(
-                label: loc.profile_language, onTap: _showLanguageDialog),
             const SizedBox(height: 32),
             _SectionLabel(loc.appearance_title),
             const SizedBox(height: 16),
@@ -608,36 +569,3 @@ class _CategoryCountRow extends StatelessWidget {
   }
 }
 
-class _LanguageRow extends StatelessWidget {
-  final String label;
-  final VoidCallback onTap;
-
-  const _LanguageRow({required this.label, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(12),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10),
-        child: Row(
-          children: [
-            const Icon(Icons.language, color: AppColors.textSecondary),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Text(
-                label,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontSize: 15,
-                ),
-              ),
-            ),
-            const Icon(Icons.chevron_right, color: AppColors.textSecondary),
-          ],
-        ),
-      ),
-    );
-  }
-}

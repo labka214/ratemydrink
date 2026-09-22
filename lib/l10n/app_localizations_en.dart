@@ -135,6 +135,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get support_thank_you => 'Thank you for using RateMyDrink! This app is free for everyone. Your donation helps cover the cost of cloud storage and keeps the app running.';
 
   @override
+  String get support_description => 'RateMyDrink is a free app developed in spare time with a passion for great drinks.';
+
+  @override
+  String get support_visit_page => 'Visit the project page';
+
+  @override
   String get support_donate_2 => '€2';
 
   @override

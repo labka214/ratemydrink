@@ -19,7 +19,7 @@ void main() async {
   );
 
   final prefs = await SharedPreferences.getInstance();
-  final savedLocale = prefs.getString('locale');
+  final savedLocale = prefs.getString('locale') ?? 'en';
 
   runApp(RateMyDrinkApp(savedLocale: savedLocale));
 }

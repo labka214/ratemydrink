@@ -315,9 +315,7 @@ class _DrinkFormScreenState extends State<DrinkFormScreen> {
         iconTheme: const IconThemeData(color: AppColors.textSecondary),
       ),
       body: SingleChildScrollView(
-        physics: (_showSuggestions || _showCountrySuggestions)
-            ? const NeverScrollableScrollPhysics()
-            : const ClampingScrollPhysics(),
+        physics: const ClampingScrollPhysics(),
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: EdgeInsets.fromLTRB(
           20,
@@ -657,7 +655,7 @@ class _DrinkFormScreenState extends State<DrinkFormScreen> {
             constraints: BoxConstraints(
               maxHeight: min(
                 _suggestions.length * 72.0,
-                keyboardVisible ? 250.0 : 350.0,
+                keyboardVisible ? 180.0 : 200.0,
               ),
             ),
             decoration: BoxDecoration(
@@ -751,7 +749,7 @@ class _DrinkFormScreenState extends State<DrinkFormScreen> {
         if (_showCountrySuggestions)
           Container(
             constraints: BoxConstraints(
-              maxHeight: keyboardVisible ? 180 : 260,
+              maxHeight: keyboardVisible ? 160 : 200,
             ),
             margin: const EdgeInsets.only(top: 2),
             decoration: BoxDecoration(
