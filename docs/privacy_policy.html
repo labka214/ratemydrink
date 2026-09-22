@@ -1,0 +1,408 @@
+<title>RateMyDrink Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg:        #F8F9FC;
+    --surface:   #FFFFFF;
+    --border:    #E2E6EF;
+    --text:      #1A1F36;
+    --subtle:    #5A6080;
+    --accent:    #C47D0E;
+    --accent-bg: #FFF8EC;
+    --tag-bg:    #EFF1F8;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg:        #12141E;
+      --surface:   #1C1F30;
+      --border:    #2E334D;
+      --text:      #E8EAF2;
+      --subtle:    #8B91AD;
+      --accent:    #E8A020;
+      --accent-bg: #251E0A;
+      --tag-bg:    #22263A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg:        #12141E;
+    --surface:   #1C1F30;
+    --border:    #2E334D;
+    --text:      #E8EAF2;
+    --subtle:    #8B91AD;
+    --accent:    #E8A020;
+    --accent-bg: #251E0A;
+    --tag-bg:    #22263A;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    padding-inline: 20px;
+  }
+
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-block: 48px 80px;
+  }
+
+  /* Header */
+  .doc-header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+  }
+
+  .app-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .app-label svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--accent);
+    flex-shrink: 0;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: clamp(24px, 5vw, 34px);
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0 0 16px;
+    color: var(--text);
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 13px;
+    color: var(--subtle);
+  }
+
+  .meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+
+  .toc-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--subtle);
+    margin-bottom: 10px;
+  }
+
+  .toc ol {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .toc li {
+    font-size: 14px;
+  }
+
+  .toc a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .toc a:hover {
+    text-decoration: underline;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 44px;
+  }
+
+  h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    text-wrap: balance;
+  }
+
+  p {
+    margin: 0 0 12px;
+    color: var(--text);
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol {
+    margin: 8px 0 12px;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  li { color: var(--text); }
+
+  /* Data table */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 12px 0;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .data-table th {
+    background: var(--tag-bg);
+    text-align: left;
+    padding: 9px 14px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--subtle);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-table td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+
+  /* Highlight box */
+  .highlight {
+    background: var(--accent-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+
+  /* Contact */
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+
+  .contact-box p { margin: 0; }
+
+  .contact-email {
+    display: inline-block;
+    margin-top: 8px;
+    font-family: 'Inter', monospace;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+    word-break: break-all;
+    user-select: all;
+  }
+
+  /* Footer */
+  .doc-footer {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    margin-top: 60px;
+    font-size: 13px;
+    color: var(--subtle);
+    text-align: center;
+  }
+</style>
+
+<div class="wrapper">
+
+  <header class="doc-header">
+    <div class="app-label">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 2l1.5 9H6l-1 5h14l-1-5h-2.5L17 2H7zm2.2 2h5.6l-1.3 7H10.5L9.2 4zM6.3 15l.6-3h10.2l.6 3H6.3z"/>
+      </svg>
+      RateMyDrink
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span>Effective date: September 22, 2026</span>
+      <span>Last updated: September 22, 2026</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Data</a></li>
+      <li><a href="#leaderboard">Public Leaderboard</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#storage">Data Storage &amp; Security</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2>1. Overview</h2>
+    <p>RateMyDrink ("the app", "we", "us") is a personal drink rating application that lets you log, rate, and track your rum and whiskey experiences. This Privacy Policy explains what personal data we collect, why we collect it, and how we handle it.</p>
+    <p>By using RateMyDrink, you agree to the collection and use of your information as described in this policy.</p>
+  </section>
+
+  <section id="data-collected">
+    <h2>2. Data We Collect</h2>
+    <p>We collect only what is necessary to provide the app's features.</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Source</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google account name &amp; email address</td>
+          <td>Google Sign-In</td>
+          <td>Authentication and identifying your account</td>
+        </tr>
+        <tr>
+          <td>Profile information (display name, phone number)</td>
+          <td>You enter it voluntarily</td>
+          <td>Personalising your profile</td>
+        </tr>
+        <tr>
+          <td>Drink ratings, notes, dates, prices</td>
+          <td>You enter them</td>
+          <td>Storing your personal drink log</td>
+        </tr>
+        <tr>
+          <td>Photos of drinks</td>
+          <td>Your device gallery</td>
+          <td>Attaching images to your drink records</td>
+        </tr>
+        <tr>
+          <td>Drink name, category, country, rating</td>
+          <td>Derived from your entries</td>
+          <td>Anonymised leaderboard (see §4)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We do not collect location data, device identifiers, or any data beyond what you explicitly provide.</p>
+  </section>
+
+  <section id="how-we-use">
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>To authenticate you securely via Google Sign-In</li>
+      <li>To store and display your personal drink log</li>
+      <li>To calculate and display your achievements (badges)</li>
+      <li>To display aggregated, anonymised drink ratings in the leaderboard</li>
+      <li>To export your data as a CSV file when you request it</li>
+    </ul>
+    <p>We do not use your data for advertising, profiling, or any automated decision-making.</p>
+  </section>
+
+  <section id="leaderboard">
+    <h2>4. Public Leaderboard</h2>
+    <div class="highlight">
+      The leaderboard shows drink names, categories, countries of origin, and average ratings. It does <strong>not</strong> display your name, email address, profile photo, personal notes, prices, or any other identifying information.
+    </div>
+    <p>Each leaderboard entry is linked internally to your user ID (a random string generated by Firebase), which is never visible to other users. If you delete your account or a drink entry, the corresponding leaderboard record is removed.</p>
+  </section>
+
+  <section id="third-party">
+    <h2>5. Third-Party Services</h2>
+    <p>RateMyDrink uses the following third-party services, each governed by their own privacy policy:</p>
+    <ul>
+      <li><strong>Google Sign-In</strong> — for authentication. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><strong>Firebase Authentication</strong> — manages your login session securely. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></li>
+      <li><strong>Cloud Firestore</strong> — stores your drink records and profile data on Google's servers.</li>
+      <li><strong>Firebase Storage</strong> — stores photos you attach to drink entries.</li>
+    </ul>
+    <p>All data is stored within Google Cloud infrastructure. Google's data processing terms apply to the use of these services.</p>
+  </section>
+
+  <section id="storage">
+    <h2>6. Data Storage &amp; Security</h2>
+    <p>Your data is stored on Google Firebase servers with industry-standard encryption in transit (TLS) and at rest. Access to your data is protected by Firebase Security Rules, which ensure that only your authenticated account can read or modify your personal records.</p>
+    <p>We take reasonable precautions to protect your data, but no internet transmission is completely secure. We cannot guarantee absolute security.</p>
+  </section>
+
+  <section id="rights">
+    <h2>7. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> your data — all your drink records and profile are visible directly in the app</li>
+      <li><strong>Export</strong> your data — use the CSV export feature in the app</li>
+      <li><strong>Correct</strong> your data — edit any drink entry or your profile at any time</li>
+      <li><strong>Delete</strong> your data — delete individual entries within the app; to request full account and data deletion, contact us at the address below</li>
+    </ul>
+    <p>If you are located in the European Economic Area (EEA), you may also have rights under GDPR including the right to object to processing and the right to lodge a complaint with a supervisory authority.</p>
+  </section>
+
+  <section id="retention">
+    <h2>8. Data Retention</h2>
+    <p>We retain your data for as long as your account is active. If you request account deletion, your personal data (profile, drink entries, photos) will be permanently removed from our systems within 30 days. Anonymised leaderboard entries derived from your ratings are removed at the same time.</p>
+  </section>
+
+  <section id="children">
+    <h2>9. Children's Privacy</h2>
+    <p>RateMyDrink is intended for adults of legal drinking age in their country of residence. We do not knowingly collect personal data from anyone under the age of 18. If you believe a minor has provided us with personal information, please contact us and we will delete it promptly.</p>
+  </section>
+
+  <section id="changes">
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we make significant changes, we will update the "Last updated" date at the top of this page. Continued use of the app after any changes constitutes your acceptance of the revised policy.</p>
+  </section>
+
+  <section id="contact">
+    <h2>11. Contact</h2>
+    <div class="contact-box">
+      <p>If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
+      <span class="contact-email">igor.weiss214@yahoo.com</span>
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <p>RateMyDrink &nbsp;·&nbsp; Personal drink rating app &nbsp;·&nbsp; © 2026</p>
+  </footer>
+
+</div>
