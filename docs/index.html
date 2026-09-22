@@ -1,0 +1,569 @@
+<title>RateMyDrink</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap">
+
+<style>
+:root {
+  --bg: #FAF8F5;
+  --surface: #FFFFFF;
+  --card: #F2EFE9;
+  --border: #DDD8D0;
+  --text: #1C1A20;
+  --muted: #6E697A;
+  --accent: #B8780A;
+  --accent-light: rgba(184,120,10,0.10);
+  --accent-border: rgba(184,120,10,0.28);
+  --nav-bg: rgba(250,248,245,0.88);
+  --shadow: 0 2px 16px rgba(0,0,0,0.07);
+  --revolut: #191C20;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F0F14;
+    --surface: #18181F;
+    --card: #1E1E2A;
+    --border: #2A2A38;
+    --text: #EDE9E3;
+    --muted: #8A8699;
+    --accent: #D49520;
+    --accent-light: rgba(212,149,32,0.12);
+    --accent-border: rgba(212,149,32,0.30);
+    --nav-bg: rgba(15,15,20,0.88);
+    --shadow: 0 2px 24px rgba(0,0,0,0.40);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F0F14;
+  --surface: #18181F;
+  --card: #1E1E2A;
+  --border: #2A2A38;
+  --text: #EDE9E3;
+  --muted: #8A8699;
+  --accent: #D49520;
+  --accent-light: rgba(212,149,32,0.12);
+  --accent-border: rgba(212,149,32,0.30);
+  --nav-bg: rgba(15,15,20,0.88);
+  --shadow: 0 2px 24px rgba(0,0,0,0.40);
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-inline: 20px;
+}
+
+/* ── NAV ── */
+nav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 100;
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  margin-inline: -20px;
+  padding: 13px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+.nav-logo strong { color: var(--accent); }
+.lang-toggle {
+  display: flex;
+  gap: 3px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px;
+}
+.lang-btn {
+  border: none;
+  background: none;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 5px 11px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.lang-btn.active { background: var(--accent); color: #fff; }
+
+/* ── HERO ── */
+.hero {
+  padding-block: 72px 56px;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.eyebrow {
+  display: inline-block;
+  background: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 7.5vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-wrap: balance;
+  margin-bottom: 18px;
+}
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 500px;
+  margin: 0 auto 32px;
+  text-wrap: balance;
+}
+.hero-chips {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+.hero-divider {
+  width: 48px; height: 2px;
+  background: linear-gradient(90deg, var(--accent), #C87838);
+  border-radius: 2px;
+  margin: 48px auto 0;
+}
+
+/* ── SECTION ── */
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-block: 56px;
+  border-top: 1px solid var(--border);
+}
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 4.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-wrap: balance;
+}
+
+/* ── FEATURES ── */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+}
+.feat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+}
+.feat-icon { font-size: 1.35rem; display: block; margin-bottom: 10px; }
+.feat h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 5px; }
+.feat p { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+/* ── FORM ── */
+.form-grid { display: grid; gap: 14px; }
+label { display: block; font-size: 12.5px; font-weight: 600; letter-spacing: 0.03em; color: var(--muted); margin-bottom: 5px; }
+input, select, textarea {
+  width: 100%;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  padding: 11px 13px;
+  outline: none;
+  transition: border-color 0.18s;
+  appearance: none;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+textarea { resize: vertical; min-height: 110px; }
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 4.5L11 1' stroke='%238A8699' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  padding-right: 38px;
+}
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+
+.captcha-wrap {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: border-color 0.18s;
+}
+.captcha-wrap:focus-within { border-color: var(--accent); }
+.captcha-q { font-size: 15px; white-space: nowrap; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+.captcha-a {
+  border: none !important; border-radius: 0 !important;
+  background: none !important; padding: 0 !important;
+  width: 64px; font-size: 15px;
+}
+.captcha-a:focus { border: none; }
+.field-err { font-size: 12px; color: #d94f4f; margin-top: 3px; display: block; min-height: 16px; }
+.btn {
+  width: 100%; background: var(--accent); color: #fff; border: none;
+  border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 15px;
+  font-weight: 600; padding: 14px; cursor: pointer;
+  transition: opacity 0.18s, transform 0.1s;
+}
+.btn:hover { opacity: 0.9; }
+.btn:active { transform: scale(0.99); }
+.form-note { font-size: 12px; color: var(--muted); text-align: center; }
+.success-box {
+  background: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1rem;
+  display: none;
+}
+
+/* ── SUPPORT ── */
+.support-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.support-text { flex: 1; min-width: 200px; }
+.support-text p { color: var(--muted); line-height: 1.75; margin-bottom: 20px; }
+.revolut-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--revolut);
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.18s;
+}
+.revolut-link:hover { opacity: 0.85; }
+.hint { font-size: 12px; color: var(--muted); margin-top: 10px; }
+.qr-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+  text-align: center;
+}
+.qr-card-label { font-size: 11px; color: #555; margin-top: 8px; font-weight: 600; letter-spacing: 0.04em; }
+
+/* ── FOOTER ── */
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+  padding-block: 28px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (max-width: 500px) {
+  .support-grid { flex-direction: column-reverse; align-items: center; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><strong>Rate</strong>My<strong>Drink</strong></div>
+  <div class="lang-toggle">
+    <button class="lang-btn" id="btn-sk" onclick="setLang('sk')">SK</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="eyebrow" data-sk="Mobilná aplikácia" data-en="Mobile Application">Mobilná aplikácia</div>
+  <h1 data-sk="Hodnoť <em>rum</em><br>a <em>whiskey</em><br>ako pravý znalec" data-en="Rate <em>rum</em><br>and <em>whiskey</em><br>like a connoisseur">Hodnoť <em>rum</em><br>a <em>whiskey</em><br>ako pravý znalec</h1>
+  <p class="hero-sub" data-sk="Sleduj svoju zbierku, hodnoť degustácie a porovnávaj sa s komunitou. RateMyDrink je tvoj osobný denník sprituóznych zážitkov." data-en="Track your collection, rate tastings, and compare with the community. RateMyDrink is your personal spirits journal.">Sleduj svoju zbierku, hodnoť degustácie a porovnávaj sa s komunitou. RateMyDrink je tvoj osobný denník sprituóznych zážitkov.</p>
+  <div class="hero-chips">
+    <div class="chip">⭐ <span data-sk="441 nápojov v DB" data-en="441 drinks in DB">441 nápojov v DB</span></div>
+    <div class="chip">🌍 SK / CZ / EN / DE</div>
+    <div class="chip">🏆 <span data-sk="29 achievementov" data-en="29 achievements">29 achievementov</span></div>
+    <div class="chip">📊 <span data-sk="Verejný rebríček" data-en="Public leaderboard">Verejný rebríček</span></div>
+  </div>
+  <div class="hero-divider"></div>
+</div>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2 data-sk="O aplikácii" data-en="About the App">O aplikácii</h2>
+  <div class="features">
+    <div class="feat">
+      <span class="feat-icon">📝</span>
+      <h3 data-sk="Zaznamenaj degustáciu" data-en="Record a tasting">Zaznamenaj degustáciu</h3>
+      <p data-sk="Hviezdičky, fotka, poznámky, krajina, cena — všetko na jednom mieste." data-en="Stars, photo, notes, country, price — all in one place.">Hviezdičky, fotka, poznámky, krajina, cena — všetko na jednom mieste.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🗂️</span>
+      <h3 data-sk="Rum & Whiskey" data-en="Rum & Whiskey">Rum & Whiskey</h3>
+      <p data-sk="441 nápojov s autocomplete. Nenájdeš? Pridaj si vlastný." data-en="441 drinks with autocomplete. Not found? Add your own.">441 nápojov s autocomplete. Nenájdeš? Pridaj si vlastný.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🏆</span>
+      <h3 data-sk="Verejný rebríček" data-en="Public leaderboard">Verejný rebríček</h3>
+      <p data-sk="Porovnaj hodnotenia s komunitou v reálnom čase." data-en="Compare ratings with the community in real time.">Porovnaj hodnotenia s komunitou v reálnom čase.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🎖️</span>
+      <h3 data-sk="29 odznakov" data-en="29 Achievements">29 odznakov</h3>
+      <p data-sk="Za počty ochutnávok, krajiny, subtypes a špeciálne míľniky." data-en="For tasting counts, countries, subtypes, and special milestones.">Za počty ochutnávok, krajiny, subtypes a špeciálne míľniky.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">📤</span>
+      <h3 data-sk="Zdieľateľná karta" data-en="Shareable card">Zdieľateľná karta</h3>
+      <p data-sk="Vytvor PNG kartu s hodnotením a zdieľaj ju priateľom." data-en="Create a PNG rating card and share it with friends.">Vytvor PNG kartu s hodnotením a zdieľaj ju priateľom.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🌐</span>
+      <h3 data-sk="4 jazyky" data-en="4 Languages">4 jazyky</h3>
+      <p data-sk="Slovenčina, čeština, angličtina a nemčina." data-en="Slovak, Czech, English and German.">Slovenčina, čeština, angličtina a nemčina.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2 data-sk="Napíšte nám" data-en="Get in Touch">Napíšte nám</h2>
+
+  <div class="success-box" id="successBox">
+    <span data-sk="✅ Správa odoslaná! Ozveme sa čoskoro." data-en="✅ Message sent! We'll get back to you soon.">✅ Správa odoslaná! Ozveme sa čoskoro.</span>
+  </div>
+
+  <form id="contactForm" class="form-grid" action="https://formsubmit.co/ratemydrink.r.w@gmail.com" method="POST" novalidate>
+    <input type="hidden" name="_cc" value="aboxik.sk@gmail.com">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://ratemydrink.github.io?sent=1">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+    <div>
+      <label id="lbl-category" data-sk="Kategória" data-en="Category">Kategória</label>
+      <select name="category" id="sel-category">
+        <option value="Návrh" data-sk="Návrh na vylepšenie" data-en="Suggestion / improvement">Návrh na vylepšenie</option>
+        <option value="Chyba" data-sk="Nahlásenie chyby" data-en="Bug report">Nahlásenie chyby</option>
+        <option value="Databáza" data-sk="Chýbajúci nápoj v databáze" data-en="Missing drink in database">Chýbajúci nápoj v databáze</option>
+        <option value="Iné" data-sk="Iné" data-en="Other">Iné</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="f-msg" data-sk="Správa" data-en="Message">Správa</label>
+      <textarea name="message" id="f-msg" required></textarea>
+      <span class="field-err" id="err-msg"></span>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <label for="f-name" data-sk="Meno" data-en="Name">Meno</label>
+        <input type="text" name="name" id="f-name" autocomplete="name">
+        <span class="field-err" id="err-name"></span>
+      </div>
+      <div>
+        <label for="f-email" data-sk="E-mail (nepovinné)" data-en="E-mail (optional)">E-mail (nepovinné)</label>
+        <input type="email" name="email" id="f-email" autocomplete="email">
+      </div>
+    </div>
+
+    <div>
+      <label data-sk="Antispam — vypočítajte:" data-en="Anti-spam — solve this:">Antispam — vypočítajte:</label>
+      <div class="captcha-wrap">
+        <span class="captcha-q" id="captchaQ"></span>
+        <input class="captcha-a" type="text" id="captchaA" inputmode="numeric" placeholder="?" autocomplete="off">
+      </div>
+      <span class="field-err" id="err-cap"></span>
+    </div>
+
+    <button type="submit" class="btn" id="submitBtn" data-sk="Odoslať správu" data-en="Send message">Odoslať správu</button>
+    <p class="form-note" data-sk="Odpovedáme zvyčajne do 48 hodín." data-en="We usually respond within 48 hours.">Odpovedáme zvyčajne do 48 hodín.</p>
+  </form>
+</section>
+
+<!-- SUPPORT -->
+<section class="section">
+  <h2 data-sk="Podporte vývoj" data-en="Support Development">Podporte vývoj</h2>
+  <div class="support-grid">
+    <div class="support-text">
+      <p data-sk="RateMyDrink je bezplatná aplikácia vyvíjaná vo voľnom čase s láskou k dobrým spritám. Ak ti pomáha sledovať tvoju zbierku a objavovať nové chute, môžeš podporiť jej ďalší rozvoj symbolickým príspevkom cez Revolut — rýchlo, bez poplatkov, priamo." data-en="RateMyDrink is a free app developed in spare time with a passion for fine spirits. If it helps you track your collection and discover new flavours, you can support its continued development with a small contribution via Revolut — fast, fee-free, and direct.">
+        RateMyDrink je bezplatná aplikácia vyvíjaná vo voľnom čase s láskou k dobrým spritám. Ak ti pomáha sledovať tvoju zbierku a objavovať nové chute, môžeš podporiť jej ďalší rozvoj symbolickým príspevkom cez Revolut — rýchlo, bez poplatkov, priamo.
+      </p>
+      <a href="https://revolut.me/igor_w75" target="_blank" rel="noopener" class="revolut-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M20.9 7.2C20.9 3.8 18.1 1 14.7 1H4.1v22h4.2v-7.6h4.1l3.9 7.6H21l-4.3-8.1c2.4-1 4.2-3.2 4.2-5.7zM14.7 11.6H8.3V4.8h6.4c1.8 0 3.2 1.4 3.2 3.2 0 2-1.4 3.6-3.2 3.6z"/></svg>
+        <span data-sk="Prispieť cez Revolut" data-en="Contribute via Revolut">Prispieť cez Revolut</span>
+      </a>
+      <p class="hint" data-sk="Príspevok je dobrovoľný. Akákoľvek suma je vítaná 🥃" data-en="Contribution is voluntary. Any amount is appreciated 🥃">Príspevok je dobrovoľný. Akákoľvek suma je vítaná 🥃</p>
+    </div>
+    <div class="qr-card">
+      <div id="qrcode"></div>
+      <p class="qr-card-label">revolut.me/igor_w75</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 RateMyDrink &nbsp;·&nbsp; <span data-sk="Vyrobené s ❤️ pre milovníkov dobrých spritov" data-en="Made with ❤️ for lovers of fine spirits">Vyrobené s ❤️ pre milovníkov dobrých spritov</span></p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// ── LANGUAGE ──────────────────────────────────────────────
+var lang = 'sk';
+try { lang = localStorage.getItem('rmd_lang') || 'sk'; } catch(e){}
+
+function setLang(l) {
+  lang = l;
+  try { localStorage.setItem('rmd_lang', l); } catch(e){}
+  document.querySelectorAll('[data-sk]').forEach(function(el) {
+    var val = el.getAttribute('data-' + l);
+    if (!val) return;
+    var tag = el.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA') {
+      el.placeholder = val;
+    } else if (tag === 'OPTION') {
+      el.textContent = val;
+    } else {
+      el.innerHTML = val;
+    }
+  });
+  document.getElementById('btn-sk').classList.toggle('active', l === 'sk');
+  document.getElementById('btn-en').classList.toggle('active', l === 'en');
+}
+
+// ── CAPTCHA ───────────────────────────────────────────────
+var captchaCorrect = 0;
+
+function newCaptcha() {
+  var a = Math.floor(Math.random() * 9) + 1;
+  var b = Math.floor(Math.random() * 9) + 1;
+  var plus = Math.random() > 0.4;
+  captchaCorrect = plus ? a + b : a - b;
+  document.getElementById('captchaQ').textContent = a + (plus ? ' + ' : ' − ') + b + ' =';
+  document.getElementById('captchaA').value = '';
+}
+
+// ── FORM ─────────────────────────────────────────────────
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var ok = true;
+
+  var msg = document.getElementById('f-msg').value.trim();
+  var errMsg = document.getElementById('err-msg');
+  if (!msg) {
+    errMsg.textContent = lang === 'sk' ? 'Napíšte správu' : 'Please write a message';
+    ok = false;
+  } else { errMsg.textContent = ''; }
+
+  var name = document.getElementById('f-name').value.trim();
+  var errName = document.getElementById('err-name');
+  if (!name) {
+    errName.textContent = lang === 'sk' ? 'Zadajte meno' : 'Please enter your name';
+    ok = false;
+  } else { errName.textContent = ''; }
+
+  var ans = parseInt(document.getElementById('captchaA').value.trim(), 10);
+  var errCap = document.getElementById('err-cap');
+  if (isNaN(ans) || ans !== captchaCorrect) {
+    errCap.textContent = lang === 'sk' ? 'Nesprávna odpoveď' : 'Wrong answer';
+    newCaptcha();
+    ok = false;
+  } else { errCap.textContent = ''; }
+
+  if (!ok) return;
+
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = lang === 'sk' ? 'Odosielam…' : 'Sending…';
+
+  var form = this;
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(r) {
+    showSuccess();
+  }).catch(function() {
+    form.submit();
+  });
+});
+
+function showSuccess() {
+  document.getElementById('contactForm').style.display = 'none';
+  var s = document.getElementById('successBox');
+  s.style.display = 'block';
+  setLang(lang);
+}
+
+// ── QR CODE ──────────────────────────────────────────────
+function initQR() {
+  if (typeof QRCode === 'undefined') return;
+  new QRCode(document.getElementById('qrcode'), {
+    text: 'https://revolut.me/igor_w75',
+    width: 156, height: 156,
+    colorDark: '#000000',
+    colorLight: '#ffffff',
+    correctLevel: QRCode.CorrectLevel.M
+  });
+}
+
+// ── INIT ─────────────────────────────────────────────────
+setLang(lang);
+newCaptcha();
+
+try {
+  if (window.location.search.indexOf('sent=1') !== -1) showSuccess();
+} catch(e){}
+
+if (document.readyState === 'complete') { initQR(); }
+else { window.addEventListener('load', initQR); }
+</script>
