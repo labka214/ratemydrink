@@ -764,6 +764,354 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Unlocked'**
   String get badges_unlocked_label;
+
+  /// No description provided for @badge_rum_1_name.
+  ///
+  /// In en, this message translates to:
+  /// **'First Sip'**
+  String get badge_rum_1_name;
+
+  /// No description provided for @badge_rum_1_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 1 rum'**
+  String get badge_rum_1_desc;
+
+  /// No description provided for @badge_rum_5_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Beginner'**
+  String get badge_rum_5_name;
+
+  /// No description provided for @badge_rum_5_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 5 rums'**
+  String get badge_rum_5_desc;
+
+  /// No description provided for @badge_rum_10_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Discoverer'**
+  String get badge_rum_10_name;
+
+  /// No description provided for @badge_rum_10_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 10 rums'**
+  String get badge_rum_10_desc;
+
+  /// No description provided for @badge_rum_25_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Connoisseur'**
+  String get badge_rum_25_name;
+
+  /// No description provided for @badge_rum_25_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 25 rums'**
+  String get badge_rum_25_desc;
+
+  /// No description provided for @badge_rum_50_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Explorer'**
+  String get badge_rum_50_name;
+
+  /// No description provided for @badge_rum_50_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 50 rums'**
+  String get badge_rum_50_desc;
+
+  /// No description provided for @badge_rum_100_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Enthusiast'**
+  String get badge_rum_100_name;
+
+  /// No description provided for @badge_rum_100_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 100 rums'**
+  String get badge_rum_100_desc;
+
+  /// No description provided for @badge_rum_150_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Expert'**
+  String get badge_rum_150_name;
+
+  /// No description provided for @badge_rum_150_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 150 rums'**
+  String get badge_rum_150_desc;
+
+  /// No description provided for @badge_rum_200_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Master'**
+  String get badge_rum_200_name;
+
+  /// No description provided for @badge_rum_200_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 200 rums'**
+  String get badge_rum_200_desc;
+
+  /// No description provided for @badge_rum_250_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Legend'**
+  String get badge_rum_250_name;
+
+  /// No description provided for @badge_rum_250_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 250 rums'**
+  String get badge_rum_250_desc;
+
+  /// No description provided for @badge_wsk_1_name.
+  ///
+  /// In en, this message translates to:
+  /// **'First Whiskey'**
+  String get badge_wsk_1_name;
+
+  /// No description provided for @badge_wsk_1_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 1 whiskey'**
+  String get badge_wsk_1_desc;
+
+  /// No description provided for @badge_wsk_5_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Beginner'**
+  String get badge_wsk_5_name;
+
+  /// No description provided for @badge_wsk_5_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 5 whiskies'**
+  String get badge_wsk_5_desc;
+
+  /// No description provided for @badge_wsk_10_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Discoverer'**
+  String get badge_wsk_10_name;
+
+  /// No description provided for @badge_wsk_10_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 10 whiskies'**
+  String get badge_wsk_10_desc;
+
+  /// No description provided for @badge_wsk_25_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Connoisseur'**
+  String get badge_wsk_25_name;
+
+  /// No description provided for @badge_wsk_25_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 25 whiskies'**
+  String get badge_wsk_25_desc;
+
+  /// No description provided for @badge_wsk_50_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Explorer'**
+  String get badge_wsk_50_name;
+
+  /// No description provided for @badge_wsk_50_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 50 whiskies'**
+  String get badge_wsk_50_desc;
+
+  /// No description provided for @badge_wsk_100_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Enthusiast'**
+  String get badge_wsk_100_name;
+
+  /// No description provided for @badge_wsk_100_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 100 whiskies'**
+  String get badge_wsk_100_desc;
+
+  /// No description provided for @badge_wsk_150_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Expert'**
+  String get badge_wsk_150_name;
+
+  /// No description provided for @badge_wsk_150_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 150 whiskies'**
+  String get badge_wsk_150_desc;
+
+  /// No description provided for @badge_wsk_200_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Master'**
+  String get badge_wsk_200_name;
+
+  /// No description provided for @badge_wsk_200_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 200 whiskies'**
+  String get badge_wsk_200_desc;
+
+  /// No description provided for @badge_wsk_250_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Legend'**
+  String get badge_wsk_250_name;
+
+  /// No description provided for @badge_wsk_250_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate 250 whiskies'**
+  String get badge_wsk_250_desc;
+
+  /// No description provided for @badge_exp_3_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler'**
+  String get badge_exp_3_name;
+
+  /// No description provided for @badge_exp_3_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Drinks from 3 countries'**
+  String get badge_exp_3_desc;
+
+  /// No description provided for @badge_exp_7_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Globetrotter'**
+  String get badge_exp_7_name;
+
+  /// No description provided for @badge_exp_7_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Drinks from 7 countries'**
+  String get badge_exp_7_desc;
+
+  /// No description provided for @badge_exp_12_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Global Connoisseur'**
+  String get badge_exp_12_name;
+
+  /// No description provided for @badge_exp_12_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Drinks from 12 countries'**
+  String get badge_exp_12_desc;
+
+  /// No description provided for @badge_col_rum_3_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Gourmet'**
+  String get badge_col_rum_3_name;
+
+  /// No description provided for @badge_col_rum_3_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Taste 3 types of rum'**
+  String get badge_col_rum_3_desc;
+
+  /// No description provided for @badge_col_rum_all_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Rum Collector'**
+  String get badge_col_rum_all_name;
+
+  /// No description provided for @badge_col_rum_all_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Taste all types of rum'**
+  String get badge_col_rum_all_desc;
+
+  /// No description provided for @badge_col_wsk_3_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Gourmet'**
+  String get badge_col_wsk_3_name;
+
+  /// No description provided for @badge_col_wsk_3_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Taste 3 types of whiskey'**
+  String get badge_col_wsk_3_desc;
+
+  /// No description provided for @badge_col_wsk_all_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Whiskey Collector'**
+  String get badge_col_wsk_all_name;
+
+  /// No description provided for @badge_col_wsk_all_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Taste all types of whiskey'**
+  String get badge_col_wsk_all_desc;
+
+  /// No description provided for @badge_tst_critic_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Critic'**
+  String get badge_tst_critic_name;
+
+  /// No description provided for @badge_tst_critic_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Give a 1★ or 2★ rating'**
+  String get badge_tst_critic_desc;
+
+  /// No description provided for @badge_tst_perfect_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfectionist'**
+  String get badge_tst_perfect_name;
+
+  /// No description provided for @badge_tst_perfect_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Give a 5★ rating'**
+  String get badge_tst_perfect_desc;
+
+  /// No description provided for @badge_tst_photo_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Photographer'**
+  String get badge_tst_photo_name;
+
+  /// No description provided for @badge_tst_photo_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a photo to a rating'**
+  String get badge_tst_photo_desc;
+
+  /// No description provided for @badge_tst_notes_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Writer'**
+  String get badge_tst_notes_name;
+
+  /// No description provided for @badge_tst_notes_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'10 ratings with a note'**
+  String get badge_tst_notes_desc;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

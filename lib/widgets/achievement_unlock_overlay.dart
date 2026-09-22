@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../core/constants/app_colors.dart';
+import '../l10n/app_localizations.dart';
 import '../models/achievement.dart';
+import '../services/achievement_definitions.dart';
 
 // Zobrazí sa na 3 sekundy po odomknutí nového odznaku (fadeIn 300ms,
 // viditeľné 3s, fadeOut 300ms). Klepnutím sa zatvorí okamžite.
@@ -57,6 +59,7 @@ class _AchievementUnlockOverlayState extends State<AchievementUnlockOverlay>
   @override
   Widget build(BuildContext context) {
     final achievement = widget.achievement;
+    final loc = AppLocalizations.of(context)!;
 
     return FadeTransition(
       opacity: _opacity,
@@ -106,7 +109,8 @@ class _AchievementUnlockOverlayState extends State<AchievementUnlockOverlay>
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        achievement.name,
+                        AchievementDefinitions.localizedName(
+                            achievement.id, loc),
                         style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontWeight: FontWeight.bold,
@@ -114,7 +118,8 @@ class _AchievementUnlockOverlayState extends State<AchievementUnlockOverlay>
                         ),
                       ),
                       Text(
-                        achievement.description,
+                        AchievementDefinitions.localizedDescription(
+                            achievement.id, loc),
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 12,

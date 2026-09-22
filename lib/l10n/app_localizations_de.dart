@@ -346,4 +346,178 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get badges_unlocked_label => 'Freigeschaltet';
+
+  @override
+  String get badge_rum_1_name => 'Erster Schluck';
+
+  @override
+  String get badge_rum_1_desc => '1 Rum bewertet';
+
+  @override
+  String get badge_rum_5_name => 'Rum-Einsteiger';
+
+  @override
+  String get badge_rum_5_desc => '5 Rums bewertet';
+
+  @override
+  String get badge_rum_10_name => 'Rum-Entdecker';
+
+  @override
+  String get badge_rum_10_desc => '10 Rums bewertet';
+
+  @override
+  String get badge_rum_25_name => 'Rum-Kenner';
+
+  @override
+  String get badge_rum_25_desc => '25 Rums bewertet';
+
+  @override
+  String get badge_rum_50_name => 'Rum-Erkunder';
+
+  @override
+  String get badge_rum_50_desc => '50 Rums bewertet';
+
+  @override
+  String get badge_rum_100_name => 'Rum-Enthusiast';
+
+  @override
+  String get badge_rum_100_desc => '100 Rums bewertet';
+
+  @override
+  String get badge_rum_150_name => 'Rum-Experte';
+
+  @override
+  String get badge_rum_150_desc => '150 Rums bewertet';
+
+  @override
+  String get badge_rum_200_name => 'Rum-Meister';
+
+  @override
+  String get badge_rum_200_desc => '200 Rums bewertet';
+
+  @override
+  String get badge_rum_250_name => 'Rum-Legende';
+
+  @override
+  String get badge_rum_250_desc => '250 Rums bewertet';
+
+  @override
+  String get badge_wsk_1_name => 'Erster Whiskey';
+
+  @override
+  String get badge_wsk_1_desc => '1 Whiskey bewertet';
+
+  @override
+  String get badge_wsk_5_name => 'Whiskey-Einsteiger';
+
+  @override
+  String get badge_wsk_5_desc => '5 Whiskies bewertet';
+
+  @override
+  String get badge_wsk_10_name => 'Whiskey-Entdecker';
+
+  @override
+  String get badge_wsk_10_desc => '10 Whiskies bewertet';
+
+  @override
+  String get badge_wsk_25_name => 'Whiskey-Kenner';
+
+  @override
+  String get badge_wsk_25_desc => '25 Whiskies bewertet';
+
+  @override
+  String get badge_wsk_50_name => 'Whiskey-Erkunder';
+
+  @override
+  String get badge_wsk_50_desc => '50 Whiskies bewertet';
+
+  @override
+  String get badge_wsk_100_name => 'Whiskey-Enthusiast';
+
+  @override
+  String get badge_wsk_100_desc => '100 Whiskies bewertet';
+
+  @override
+  String get badge_wsk_150_name => 'Whiskey-Experte';
+
+  @override
+  String get badge_wsk_150_desc => '150 Whiskies bewertet';
+
+  @override
+  String get badge_wsk_200_name => 'Whiskey-Meister';
+
+  @override
+  String get badge_wsk_200_desc => '200 Whiskies bewertet';
+
+  @override
+  String get badge_wsk_250_name => 'Whiskey-Legende';
+
+  @override
+  String get badge_wsk_250_desc => '250 Whiskies bewertet';
+
+  @override
+  String get badge_exp_3_name => 'Reisender';
+
+  @override
+  String get badge_exp_3_desc => 'Getränke aus 3 Ländern';
+
+  @override
+  String get badge_exp_7_name => 'Weltenbummler';
+
+  @override
+  String get badge_exp_7_desc => 'Getränke aus 7 Ländern';
+
+  @override
+  String get badge_exp_12_name => 'Weltkenner';
+
+  @override
+  String get badge_exp_12_desc => 'Getränke aus 12 Ländern';
+
+  @override
+  String get badge_col_rum_3_name => 'Rum-Gourmet';
+
+  @override
+  String get badge_col_rum_3_desc => '3 Rum-Sorten probiert';
+
+  @override
+  String get badge_col_rum_all_name => 'Rum-Sammler';
+
+  @override
+  String get badge_col_rum_all_desc => 'Alle Rum-Sorten probiert';
+
+  @override
+  String get badge_col_wsk_3_name => 'Whiskey-Gourmet';
+
+  @override
+  String get badge_col_wsk_3_desc => '3 Whiskey-Sorten probiert';
+
+  @override
+  String get badge_col_wsk_all_name => 'Whiskey-Sammler';
+
+  @override
+  String get badge_col_wsk_all_desc => 'Alle Whiskey-Sorten probiert';
+
+  @override
+  String get badge_tst_critic_name => 'Kritiker';
+
+  @override
+  String get badge_tst_critic_desc => 'Bewertung 1★ oder 2★ vergeben';
+
+  @override
+  String get badge_tst_perfect_name => 'Perfektionist';
+
+  @override
+  String get badge_tst_perfect_desc => 'Bewertung 5★ vergeben';
+
+  @override
+  String get badge_tst_photo_name => 'Fotograf';
+
+  @override
+  String get badge_tst_photo_desc => 'Foto zu einer Bewertung hinzugefügt';
+
+  @override
+  String get badge_tst_notes_name => 'Schreiber';
+
+  @override
+  String get badge_tst_notes_desc => '10 Bewertungen mit Notiz';
 }

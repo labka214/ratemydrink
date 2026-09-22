@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_localizations.dart';
 import '../models/achievement.dart';
 
 class AchievementDefinitions {
@@ -264,4 +265,78 @@ class AchievementDefinitions {
     ...collectorAchievements,
     ...tasterAchievements,
   ];
+
+  static final Map<String, String Function(AppLocalizations)> _names = {
+    'rum_1': (l) => l.badge_rum_1_name,
+    'rum_5': (l) => l.badge_rum_5_name,
+    'rum_10': (l) => l.badge_rum_10_name,
+    'rum_25': (l) => l.badge_rum_25_name,
+    'rum_50': (l) => l.badge_rum_50_name,
+    'rum_100': (l) => l.badge_rum_100_name,
+    'rum_150': (l) => l.badge_rum_150_name,
+    'rum_200': (l) => l.badge_rum_200_name,
+    'rum_250': (l) => l.badge_rum_250_name,
+    'wsk_1': (l) => l.badge_wsk_1_name,
+    'wsk_5': (l) => l.badge_wsk_5_name,
+    'wsk_10': (l) => l.badge_wsk_10_name,
+    'wsk_25': (l) => l.badge_wsk_25_name,
+    'wsk_50': (l) => l.badge_wsk_50_name,
+    'wsk_100': (l) => l.badge_wsk_100_name,
+    'wsk_150': (l) => l.badge_wsk_150_name,
+    'wsk_200': (l) => l.badge_wsk_200_name,
+    'wsk_250': (l) => l.badge_wsk_250_name,
+    'exp_3': (l) => l.badge_exp_3_name,
+    'exp_7': (l) => l.badge_exp_7_name,
+    'exp_12': (l) => l.badge_exp_12_name,
+    'col_rum_3': (l) => l.badge_col_rum_3_name,
+    'col_rum_all': (l) => l.badge_col_rum_all_name,
+    'col_wsk_3': (l) => l.badge_col_wsk_3_name,
+    'col_wsk_all': (l) => l.badge_col_wsk_all_name,
+    'tst_critic': (l) => l.badge_tst_critic_name,
+    'tst_perfect': (l) => l.badge_tst_perfect_name,
+    'tst_photo': (l) => l.badge_tst_photo_name,
+    'tst_notes': (l) => l.badge_tst_notes_name,
+  };
+
+  static final Map<String, String Function(AppLocalizations)> _descriptions = {
+    'rum_1': (l) => l.badge_rum_1_desc,
+    'rum_5': (l) => l.badge_rum_5_desc,
+    'rum_10': (l) => l.badge_rum_10_desc,
+    'rum_25': (l) => l.badge_rum_25_desc,
+    'rum_50': (l) => l.badge_rum_50_desc,
+    'rum_100': (l) => l.badge_rum_100_desc,
+    'rum_150': (l) => l.badge_rum_150_desc,
+    'rum_200': (l) => l.badge_rum_200_desc,
+    'rum_250': (l) => l.badge_rum_250_desc,
+    'wsk_1': (l) => l.badge_wsk_1_desc,
+    'wsk_5': (l) => l.badge_wsk_5_desc,
+    'wsk_10': (l) => l.badge_wsk_10_desc,
+    'wsk_25': (l) => l.badge_wsk_25_desc,
+    'wsk_50': (l) => l.badge_wsk_50_desc,
+    'wsk_100': (l) => l.badge_wsk_100_desc,
+    'wsk_150': (l) => l.badge_wsk_150_desc,
+    'wsk_200': (l) => l.badge_wsk_200_desc,
+    'wsk_250': (l) => l.badge_wsk_250_desc,
+    'exp_3': (l) => l.badge_exp_3_desc,
+    'exp_7': (l) => l.badge_exp_7_desc,
+    'exp_12': (l) => l.badge_exp_12_desc,
+    'col_rum_3': (l) => l.badge_col_rum_3_desc,
+    'col_rum_all': (l) => l.badge_col_rum_all_desc,
+    'col_wsk_3': (l) => l.badge_col_wsk_3_desc,
+    'col_wsk_all': (l) => l.badge_col_wsk_all_desc,
+    'tst_critic': (l) => l.badge_tst_critic_desc,
+    'tst_perfect': (l) => l.badge_tst_perfect_desc,
+    'tst_photo': (l) => l.badge_tst_photo_desc,
+    'tst_notes': (l) => l.badge_tst_notes_desc,
+  };
+
+  static String localizedName(String id, AppLocalizations l10n) {
+    final getter = _names[id];
+    return getter != null ? getter(l10n) : id;
+  }
+
+  static String localizedDescription(String id, AppLocalizations l10n) {
+    final getter = _descriptions[id];
+    return getter != null ? getter(l10n) : '';
+  }
 }

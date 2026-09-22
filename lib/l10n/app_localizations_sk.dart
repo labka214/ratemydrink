@@ -346,4 +346,178 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get badges_unlocked_label => 'Odomknuté';
+
+  @override
+  String get badge_rum_1_name => 'Prvý dúšok';
+
+  @override
+  String get badge_rum_1_desc => 'Ohodnoť 1 rum';
+
+  @override
+  String get badge_rum_5_name => 'Rum Začiatočník';
+
+  @override
+  String get badge_rum_5_desc => 'Ohodnoť 5 rumov';
+
+  @override
+  String get badge_rum_10_name => 'Rum Objaviteľ';
+
+  @override
+  String get badge_rum_10_desc => 'Ohodnoť 10 rumov';
+
+  @override
+  String get badge_rum_25_name => 'Rum Znalec';
+
+  @override
+  String get badge_rum_25_desc => 'Ohodnoť 25 rumov';
+
+  @override
+  String get badge_rum_50_name => 'Rum Explorátor';
+
+  @override
+  String get badge_rum_50_desc => 'Ohodnoť 50 rumov';
+
+  @override
+  String get badge_rum_100_name => 'Rum Nadšenec';
+
+  @override
+  String get badge_rum_100_desc => 'Ohodnoť 100 rumov';
+
+  @override
+  String get badge_rum_150_name => 'Rum Expert';
+
+  @override
+  String get badge_rum_150_desc => 'Ohodnoť 150 rumov';
+
+  @override
+  String get badge_rum_200_name => 'Rum Majster';
+
+  @override
+  String get badge_rum_200_desc => 'Ohodnoť 200 rumov';
+
+  @override
+  String get badge_rum_250_name => 'Rum Legenda';
+
+  @override
+  String get badge_rum_250_desc => 'Ohodnoť 250 rumov';
+
+  @override
+  String get badge_wsk_1_name => 'Prvá whiskey';
+
+  @override
+  String get badge_wsk_1_desc => 'Ohodnoť 1 whiskey';
+
+  @override
+  String get badge_wsk_5_name => 'Whiskey Začiatočník';
+
+  @override
+  String get badge_wsk_5_desc => 'Ohodnoť 5 whiskey';
+
+  @override
+  String get badge_wsk_10_name => 'Whiskey Objaviteľ';
+
+  @override
+  String get badge_wsk_10_desc => 'Ohodnoť 10 whiskey';
+
+  @override
+  String get badge_wsk_25_name => 'Whiskey Znalec';
+
+  @override
+  String get badge_wsk_25_desc => 'Ohodnoť 25 whiskey';
+
+  @override
+  String get badge_wsk_50_name => 'Whiskey Explorátor';
+
+  @override
+  String get badge_wsk_50_desc => 'Ohodnoť 50 whiskey';
+
+  @override
+  String get badge_wsk_100_name => 'Whiskey Nadšenec';
+
+  @override
+  String get badge_wsk_100_desc => 'Ohodnoť 100 whiskey';
+
+  @override
+  String get badge_wsk_150_name => 'Whiskey Expert';
+
+  @override
+  String get badge_wsk_150_desc => 'Ohodnoť 150 whiskey';
+
+  @override
+  String get badge_wsk_200_name => 'Whiskey Majster';
+
+  @override
+  String get badge_wsk_200_desc => 'Ohodnoť 200 whiskey';
+
+  @override
+  String get badge_wsk_250_name => 'Whiskey Legenda';
+
+  @override
+  String get badge_wsk_250_desc => 'Ohodnoť 250 whiskey';
+
+  @override
+  String get badge_exp_3_name => 'Cestovateľ';
+
+  @override
+  String get badge_exp_3_desc => 'Nápoje z 3 krajín';
+
+  @override
+  String get badge_exp_7_name => 'Svetobežník';
+
+  @override
+  String get badge_exp_7_desc => 'Nápoje z 7 krajín';
+
+  @override
+  String get badge_exp_12_name => 'Globálny znalec';
+
+  @override
+  String get badge_exp_12_desc => 'Nápoje z 12 krajín';
+
+  @override
+  String get badge_col_rum_3_name => 'Rum Gurmán';
+
+  @override
+  String get badge_col_rum_3_desc => 'Ochutnaj 3 druhy rumu';
+
+  @override
+  String get badge_col_rum_all_name => 'Rum Kolektor';
+
+  @override
+  String get badge_col_rum_all_desc => 'Ochutnaj všetky druhy rumu';
+
+  @override
+  String get badge_col_wsk_3_name => 'Whiskey Gurmán';
+
+  @override
+  String get badge_col_wsk_3_desc => 'Ochutnaj 3 druhy whiskey';
+
+  @override
+  String get badge_col_wsk_all_name => 'Whiskey Kolektor';
+
+  @override
+  String get badge_col_wsk_all_desc => 'Ochutnaj všetky druhy whiskey';
+
+  @override
+  String get badge_tst_critic_name => 'Kritik';
+
+  @override
+  String get badge_tst_critic_desc => 'Daj hodnotenie 1★ alebo 2★';
+
+  @override
+  String get badge_tst_perfect_name => 'Perfekcionista';
+
+  @override
+  String get badge_tst_perfect_desc => 'Daj hodnotenie 5★';
+
+  @override
+  String get badge_tst_photo_name => 'Fotograf';
+
+  @override
+  String get badge_tst_photo_desc => 'Pridaj fotku k hodnoteniu';
+
+  @override
+  String get badge_tst_notes_name => 'Pisateľ';
+
+  @override
+  String get badge_tst_notes_desc => '10 hodnotení s poznámkou';
 }

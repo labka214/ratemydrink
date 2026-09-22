@@ -346,4 +346,178 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get badges_unlocked_label => 'Unlocked';
+
+  @override
+  String get badge_rum_1_name => 'First Sip';
+
+  @override
+  String get badge_rum_1_desc => 'Rate 1 rum';
+
+  @override
+  String get badge_rum_5_name => 'Rum Beginner';
+
+  @override
+  String get badge_rum_5_desc => 'Rate 5 rums';
+
+  @override
+  String get badge_rum_10_name => 'Rum Discoverer';
+
+  @override
+  String get badge_rum_10_desc => 'Rate 10 rums';
+
+  @override
+  String get badge_rum_25_name => 'Rum Connoisseur';
+
+  @override
+  String get badge_rum_25_desc => 'Rate 25 rums';
+
+  @override
+  String get badge_rum_50_name => 'Rum Explorer';
+
+  @override
+  String get badge_rum_50_desc => 'Rate 50 rums';
+
+  @override
+  String get badge_rum_100_name => 'Rum Enthusiast';
+
+  @override
+  String get badge_rum_100_desc => 'Rate 100 rums';
+
+  @override
+  String get badge_rum_150_name => 'Rum Expert';
+
+  @override
+  String get badge_rum_150_desc => 'Rate 150 rums';
+
+  @override
+  String get badge_rum_200_name => 'Rum Master';
+
+  @override
+  String get badge_rum_200_desc => 'Rate 200 rums';
+
+  @override
+  String get badge_rum_250_name => 'Rum Legend';
+
+  @override
+  String get badge_rum_250_desc => 'Rate 250 rums';
+
+  @override
+  String get badge_wsk_1_name => 'First Whiskey';
+
+  @override
+  String get badge_wsk_1_desc => 'Rate 1 whiskey';
+
+  @override
+  String get badge_wsk_5_name => 'Whiskey Beginner';
+
+  @override
+  String get badge_wsk_5_desc => 'Rate 5 whiskies';
+
+  @override
+  String get badge_wsk_10_name => 'Whiskey Discoverer';
+
+  @override
+  String get badge_wsk_10_desc => 'Rate 10 whiskies';
+
+  @override
+  String get badge_wsk_25_name => 'Whiskey Connoisseur';
+
+  @override
+  String get badge_wsk_25_desc => 'Rate 25 whiskies';
+
+  @override
+  String get badge_wsk_50_name => 'Whiskey Explorer';
+
+  @override
+  String get badge_wsk_50_desc => 'Rate 50 whiskies';
+
+  @override
+  String get badge_wsk_100_name => 'Whiskey Enthusiast';
+
+  @override
+  String get badge_wsk_100_desc => 'Rate 100 whiskies';
+
+  @override
+  String get badge_wsk_150_name => 'Whiskey Expert';
+
+  @override
+  String get badge_wsk_150_desc => 'Rate 150 whiskies';
+
+  @override
+  String get badge_wsk_200_name => 'Whiskey Master';
+
+  @override
+  String get badge_wsk_200_desc => 'Rate 200 whiskies';
+
+  @override
+  String get badge_wsk_250_name => 'Whiskey Legend';
+
+  @override
+  String get badge_wsk_250_desc => 'Rate 250 whiskies';
+
+  @override
+  String get badge_exp_3_name => 'Traveler';
+
+  @override
+  String get badge_exp_3_desc => 'Drinks from 3 countries';
+
+  @override
+  String get badge_exp_7_name => 'Globetrotter';
+
+  @override
+  String get badge_exp_7_desc => 'Drinks from 7 countries';
+
+  @override
+  String get badge_exp_12_name => 'Global Connoisseur';
+
+  @override
+  String get badge_exp_12_desc => 'Drinks from 12 countries';
+
+  @override
+  String get badge_col_rum_3_name => 'Rum Gourmet';
+
+  @override
+  String get badge_col_rum_3_desc => 'Taste 3 types of rum';
+
+  @override
+  String get badge_col_rum_all_name => 'Rum Collector';
+
+  @override
+  String get badge_col_rum_all_desc => 'Taste all types of rum';
+
+  @override
+  String get badge_col_wsk_3_name => 'Whiskey Gourmet';
+
+  @override
+  String get badge_col_wsk_3_desc => 'Taste 3 types of whiskey';
+
+  @override
+  String get badge_col_wsk_all_name => 'Whiskey Collector';
+
+  @override
+  String get badge_col_wsk_all_desc => 'Taste all types of whiskey';
+
+  @override
+  String get badge_tst_critic_name => 'Critic';
+
+  @override
+  String get badge_tst_critic_desc => 'Give a 1★ or 2★ rating';
+
+  @override
+  String get badge_tst_perfect_name => 'Perfectionist';
+
+  @override
+  String get badge_tst_perfect_desc => 'Give a 5★ rating';
+
+  @override
+  String get badge_tst_photo_name => 'Photographer';
+
+  @override
+  String get badge_tst_photo_desc => 'Add a photo to a rating';
+
+  @override
+  String get badge_tst_notes_name => 'Writer';
+
+  @override
+  String get badge_tst_notes_desc => '10 ratings with a note';
 }

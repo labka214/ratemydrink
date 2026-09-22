@@ -89,7 +89,7 @@ class _BadgesScreenState extends State<BadgesScreen>
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  achievement.name,
+                  AchievementDefinitions.localizedName(achievement.id, loc),
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontWeight: FontWeight.bold,
@@ -99,7 +99,8 @@ class _BadgesScreenState extends State<BadgesScreen>
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  achievement.description,
+                  AchievementDefinitions.localizedDescription(
+                      achievement.id, loc),
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 14,

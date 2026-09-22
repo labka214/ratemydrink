@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../core/constants/app_colors.dart';
+import '../l10n/app_localizations.dart';
 import '../models/achievement.dart';
+import '../services/achievement_definitions.dart';
 
 // Jedna bunka odznaku (kruh + názov + voliteľný progress bar) — zdieľaná
 // medzi BadgesScreen (mriežka) a sekciou "Odznaky" v ProfileScreen
@@ -23,6 +25,7 @@ class BadgeItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
     final showProgress = !isEarned && achievement.targetCount != null;
 
     return GestureDetector(
@@ -80,7 +83,7 @@ class BadgeItem extends StatelessWidget {
           SizedBox(
             width: circleSize + 16,
             child: Text(
-              achievement.name,
+              AchievementDefinitions.localizedName(achievement.id, loc),
               style: const TextStyle(
                 fontSize: 10,
                 fontWeight: FontWeight.w500,
