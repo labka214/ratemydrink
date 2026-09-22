@@ -122,13 +122,30 @@ class FirestoreService {
   Future<void> deleteDrink(String userId, String drinkId) async {
     final doc = await _drinksRef(userId).doc(drinkId).get();
     final name = doc.data()?['name'] as String?;
+    final imageUrl = doc.data()?['imageUrl'] as String?;
 
-    await _drinksRef(userId).doc(drinkId).delete();
-    await _storageService.deleteDrinkImage(userId, drinkId);
+    // Najprv zmaž fotku a verejný záznam — ešte kým dokument existuje.
+    // Ak niektorý krok zlyhá (napr. výpadok siete), nápoj sa NEVYMAŽE
+    // a používateľ môže skúsiť znova. Tým sa zabráni osiroteniu fotky.
+    if (imageUrl != null && imageUrl.isNotEmpty) {
+      try {
+        await _storageService.deleteDrinkImage(userId, drinkId);
+      } catch (_) {
+        // Ak sa fotku nepodarí zmazať, pokračuj — Storage sa môže
+        // čistiť neskôr manuálne alebo cez Firebase lifecycle rules.
+      }
+    }
 
     if (name != null) {
-      await _deletePublicRating(userId, name);
+      try {
+        await _deletePublicRating(userId, name);
+      } catch (_) {
+        // Verejný záznam je best-effort; zlyhanie neblokuje mazanie.
+      }
     }
+
+    // Samotný dokument vymažeme až na konci.
+    await _drinksRef(userId).doc(drinkId).delete();
   }
 
   // Prepni obľúbené
@@ -203,6 +220,25 @@ class FirestoreService {
       'email': email,
       'phone': phone,
     }, SetOptions(merge: true));
+  }
+
+  // Uloží earned badge IDs do Firestore (users/{userId}/achievements)
+  Future<void> saveAchievements(String userId, List<String> earned) async {
+    await _userRef(userId).set(
+      {'achievements': earned},
+      SetOptions(merge: true),
+    );
+  }
+
+  // Načíta earned badge IDs z Firestore (vráti prázdny List ak dokument
+  // neexistuje alebo pole chýba)
+  Future<List<String>> loadAchievements(String userId) async {
+    final doc = await _userRef(userId).get();
+    if (!doc.exists) return [];
+    final data = doc.data() as Map<String, dynamic>?;
+    final raw = data?['achievements'];
+    if (raw is List) return List<String>.from(raw);
+    return [];
   }
 
   // Odošli spätnú väzbu / kontaktný formulár

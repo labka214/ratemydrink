@@ -3,6 +3,7 @@ import '../core/enums/drink_type.dart';
 import '../models/achievement.dart';
 import '../models/drink_model.dart';
 import 'achievement_definitions.dart';
+import 'firestore_service.dart';
 
 class AchievementService {
   static const _prefsKey = 'earned_achievements';
@@ -138,7 +139,11 @@ class AchievementService {
   // Uloží do SharedPreferences. Zachováva poradie predchádzajúceho zápisu a
   // nové id pridá na koniec — vďaka tomu vieme neskôr zistiť poradie
   // odomknutia (pozri loadEarnedOrdered), hoci loadEarned() vracia len Set.
-  static Future<void> saveEarned(Set<String> earned) async {
+  static Future<void> saveEarned(
+    Set<String> earned, {
+    String? userId,
+  }) async {
+    // 1) Lokálna cache (zachová poradie odomknutia)
     final prefs = await SharedPreferences.getInstance();
     final existingOrder = prefs.getStringList(_prefsKey) ?? [];
     final merged = [
@@ -146,12 +151,28 @@ class AchievementService {
       ...earned.where((id) => !existingOrder.contains(id)),
     ];
     await prefs.setStringList(_prefsKey, merged);
+
+    // 2) Firestore (source of truth)
+    if (userId != null) {
+      await FirestoreService().saveAchievements(userId, merged);
+    }
   }
 
   // Načítaj z SharedPreferences
   static Future<Set<String>> loadEarned() async {
     final prefs = await SharedPreferences.getInstance();
     return (prefs.getStringList(_prefsKey) ?? []).toSet();
+  }
+
+  // Načíta z Firestore a synchronizuje lokálnu cache
+  static Future<Set<String>> loadEarnedFromFirestore(String userId) async {
+    final fromFirestore = await FirestoreService().loadAchievements(userId);
+    if (fromFirestore.isNotEmpty) {
+      // Prepíš lokálnu cache hodnotami z Firestore
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList(_prefsKey, fromFirestore);
+    }
+    return fromFirestore.toSet();
   }
 
   // Rovnaké dáta ako loadEarned(), ale ako List v poradí odomknutia

@@ -60,10 +60,7 @@ dependencies:
   share_plus: ^10.1.4
   path_provider: ^2.1.5
 
-  # In-app purchases
-  in_app_purchase: ^3.2.0
-
-  # URL launching (for contact screen)
+   # URL launching (for contact screen)
   url_launcher: ^6.2.0
 
 dev_dependencies:
@@ -84,5 +81,5 @@ flutter_launcher_icons:
   ios: false
   image_path: "assets/icon/app_icon.png"
   min_sdk_android: 21
-  adaptive_icon_background: "#12162800"
+  adaptive_icon_background: "#121628"
   adaptive_icon_foreground: "assets/icon/app_icon.png"

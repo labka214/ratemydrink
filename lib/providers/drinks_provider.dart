@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../models/achievement.dart';
 import '../models/drink_model.dart';
@@ -54,7 +55,7 @@ class DrinksProvider extends ChangeNotifier {
     final current = AchievementService.calculateEarned(allDrinks);
     final newlyEarned = AchievementService.findNewlyEarned(previous, current);
     if (newlyEarned.isNotEmpty) {
-      await AchievementService.saveEarned(current);
+      await AchievementService.saveEarned(current, userId: userId);
       _pendingAchievements = newlyEarned
           .map((id) => AchievementDefinitions.allAchievements
               .firstWhere((a) => a.id == id))
@@ -136,13 +137,17 @@ class DrinksProvider extends ChangeNotifier {
     bool forceRefresh = false,
   }) async {
     final key = '$userId:${type.name}';
-    debugPrint(
-      'DrinksProvider.loadDrinks START key=$key forceRefresh=$forceRefresh '
-      'current=$_loadedDrinksKey',
-    );
+    if (kDebugMode) {
+      debugPrint(
+        'DrinksProvider.loadDrinks START key=$key forceRefresh=$forceRefresh '
+        'current=$_loadedDrinksKey',
+      );
+    }
 
     if (_loadedDrinksKey == key && !forceRefresh) {
-      debugPrint('DrinksProvider.loadDrinks SKIP (už načítané) key=$key');
+      if (kDebugMode) {
+        debugPrint('DrinksProvider.loadDrinks SKIP (už načítané) key=$key');
+      }
       return;
     }
     _loadedDrinksKey = key;
@@ -164,17 +169,21 @@ class DrinksProvider extends ChangeNotifier {
         _drinks = drinks;
         _isLoading = false;
         notifyListeners();
-        debugPrint(
-          'DrinksProvider.loadDrinks END (data) key=$key count=${drinks.length}',
-        );
+        if (kDebugMode) {
+          debugPrint(
+            'DrinksProvider.loadDrinks END (data) key=$key count=${drinks.length}',
+          );
+        }
       },
       onError: (error) {
         _errorMessage = error.toString();
         _isLoading = false;
         _loadedDrinksKey = null;
         notifyListeners();
-        debugPrint(
-            'DrinksProvider.loadDrinks END (error) key=$key error=$error');
+        if (kDebugMode) {
+          debugPrint(
+              'DrinksProvider.loadDrinks END (error) key=$key error=$error');
+        }
       },
     );
   }

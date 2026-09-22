@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../services/achievement_service.dart';
 import '../services/auth_service.dart';
 import 'drinks_provider.dart';
 
@@ -37,6 +38,7 @@ class AuthProvider extends ChangeNotifier {
 
     if (user != null) {
       await _drinksProvider?.loadFavoritesOnce(user.uid);
+      await AchievementService.loadEarnedFromFirestore(user.uid);
     }
 
     _isLoading = false;

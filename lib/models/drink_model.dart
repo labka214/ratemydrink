@@ -53,14 +53,14 @@ class DrinkModel {
       manufacturer: data['manufacturer'],
       alcohol: (data['alcohol'] as num?)?.toDouble(),
       subtype: data['subtype'],
-      date: (data['date'] as Timestamp).toDate(),
+      date: (data['date'] as Timestamp?)?.toDate() ?? DateTime.now(),
       url: data['url'],
       price: (data['price'] as num?)?.toDouble(),
       currency: data['currency'] ?? 'EUR',
       note: data['note'],
       imageUrl: data['imageUrl'],
       isFavorite: data['isFavorite'] ?? false,
-      createdAt: (data['createdAt'] as Timestamp).toDate(),
+      createdAt: (data['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
     );
   }
 
