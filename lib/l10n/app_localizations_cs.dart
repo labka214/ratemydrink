@@ -18,13 +18,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get category_rum => 'Rum';
 
   @override
-  String get category_beer => 'Pivo';
-
-  @override
   String get category_whiskey => 'Whiskey';
-
-  @override
-  String get category_wine => 'Víno';
 
   @override
   String get btn_save => 'Uložit';
@@ -57,6 +51,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get field_country => 'Země';
 
   @override
+  String get manufacturer => 'Výrobce';
+
+  @override
   String get field_alcohol => 'Alkohol (%)';
 
   @override
@@ -78,6 +75,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get field_image => 'Obrázek';
 
   @override
+  String get btn_pick_image => 'Vybrat fotku';
+
+  @override
+  String get image_upload_error => 'Nepodařilo se nahrát fotku';
+
+  @override
   String get field_currency => 'Měna';
 
   @override
@@ -90,13 +93,91 @@ class AppLocalizationsCs extends AppLocalizations {
   String get login_google => 'Přihlásit se přes Google';
 
   @override
+  String get login_subtitle => 'Přihlas se a začni hodnotit';
+
+  @override
+  String get login_error => 'Přihlášení se nezdařilo. Zkus to znovu.';
+
+  @override
   String get logout => 'Odhlásit se';
 
   @override
-  String get free_limit_reached => 'Dosáhl jsi limit 50 záznamů.';
+  String get profile_logout => 'Odhlásit se';
+
+  @override
+  String get profile_title => 'Profil';
+
+  @override
+  String get profile_tooltip => 'Zobrazit profil';
+
+  @override
+  String get profile_name => 'Jméno';
+
+  @override
+  String get profile_email => 'E-mail';
+
+  @override
+  String get profile_phone => 'Mobil';
+
+  @override
+  String get profile_save => 'Uložit';
+
+  @override
+  String get profile_my_ratings => 'Moje hodnocení';
+
+  @override
+  String get profile_language => 'Jazyk';
+
+  @override
+  String get support_title => 'Podpoř RateMyDrink';
+
+  @override
+  String get support_thank_you => 'Děkujeme, že používáš RateMyDrink! Tato aplikace je pro všechny zdarma. Tvůj příspěvek pomáhá pokrýt náklady na cloudové úložiště a udržet aplikaci v provozu.';
+
+  @override
+  String get support_donate_2 => '€2';
+
+  @override
+  String get support_donate_5 => '€5';
+
+  @override
+  String get support_donate_10 => '€10';
+
+  @override
+  String get support_coming_soon => 'Již brzy — platba zatím není nastavena';
+
+  @override
+  String get support_tooltip => 'Podpořit nás';
+
+  @override
+  String get support_contact_title => 'Napiš nám';
+
+  @override
+  String get support_type_suggestion => 'Podnět na vylepšení';
+
+  @override
+  String get support_type_bug => 'Chyba (Bug)';
+
+  @override
+  String get support_type_other => 'Jiná zpráva';
+
+  @override
+  String get support_message_hint => 'Tvoje zpráva...';
+
+  @override
+  String get support_send => 'Odeslat';
+
+  @override
+  String get support_message_sent => 'Zpráva odeslána, děkujeme!';
 
   @override
   String get export_csv => 'Exportovat CSV';
+
+  @override
+  String get export_csv_tooltip => 'Exportovat záznamy (CSV)';
+
+  @override
+  String get export_error => 'Export se nezdařil';
 
   @override
   String get stats_title => 'Statistiky';
@@ -132,43 +213,43 @@ class AppLocalizationsCs extends AppLocalizations {
   String get favorites => 'Oblíbené';
 
   @override
+  String get no_favorites => 'Zatím žádné oblíbené';
+
+  @override
+  String get exit_app_tooltip => 'Ukončit aplikaci';
+
+  @override
   String get no_drinks => 'Žádné záznamy';
 
   @override
   String get search_hint => 'Hledej podle názvu...';
 
   @override
+  String get subtype_rumLight => 'Světlý';
+
+  @override
   String get subtype_rumDark => 'Tmavý';
-
-  @override
-  String get subtype_rumWhite => 'Bílý';
-
-  @override
-  String get subtype_rumGold => 'Zlatý';
 
   @override
   String get subtype_rumSpiced => 'Kořeněný';
 
   @override
-  String get subtype_rumFlavoured => 'Ochucený';
+  String get subtype_rumAgricole => 'Agricole';
 
   @override
-  String get subtype_rumAged => 'Starý';
+  String get subtype_rumOverproof => 'Overproof';
 
   @override
-  String get subtype_beerLight => 'Světlé';
+  String get subtype_whiskeyScotch => 'Scotch';
 
   @override
-  String get subtype_beerDark => 'Tmavé';
+  String get subtype_whiskeyIrish => 'Irish';
 
   @override
-  String get subtype_beerAle => 'Ale';
+  String get subtype_whiskeyBourbon => 'Bourbon';
 
   @override
-  String get subtype_beerLager => 'Lager';
-
-  @override
-  String get subtype_beerSpecial => 'Speciální';
+  String get subtype_whiskeyJapanese => 'Japanese';
 
   @override
   String get subtype_whiskeySingleMalt => 'Single Malt';
@@ -177,41 +258,86 @@ class AppLocalizationsCs extends AppLocalizations {
   String get subtype_whiskeyBlended => 'Blended';
 
   @override
-  String get subtype_whiskeyBourbon => 'Bourbon';
+  String get nav_home => 'Domů';
 
   @override
-  String get subtype_whiskeyScotch => 'Scotch';
+  String get navContact => 'Kontakt';
 
   @override
-  String get subtype_whiskeyFlavoured => 'Ochucená';
+  String get leaderboard => 'Žebříček';
 
   @override
-  String get subtype_wineWhiteDry => 'Bílé — suché';
+  String get leaderboard_tooltip => 'Žebříček';
 
   @override
-  String get subtype_wineWhiteSemiDry => 'Bílé — polosuché';
+  String get leaderboard_empty_title => 'Zatím žádná hodnocení';
 
   @override
-  String get subtype_wineWhiteSemiSweet => 'Bílé — polosladké';
+  String get leaderboard_empty_subtitle => 'Přidej první rum nebo whiskey!';
 
   @override
-  String get subtype_wineWhiteSweet => 'Bílé — sladké';
+  String leaderboard_ratings(int count) {
+    return '$count hodnocení';
+  }
 
   @override
-  String get subtype_wineRoseDry => 'Růžové — suché';
+  String get leaderboard_error => 'Chyba načítání';
 
   @override
-  String get subtype_wineRoseSemiDry => 'Růžové — polosuché';
+  String get share_tooltip => 'Sdílet hodnocení';
 
   @override
-  String get subtype_wineRoseSemiSweet => 'Růžové — polosladké';
+  String get share_error => 'Sdílení se nezdařilo. Zkus to znovu.';
 
   @override
-  String get subtype_wineRedDry => 'Červené — suché';
+  String share_message(String name) {
+    return 'Hodnotím $name v RateMyDrink 🥃';
+  }
 
   @override
-  String get subtype_wineRedSemiDry => 'Červené — polosuché';
+  String get share_preview_title => 'Náhled sdílené karty';
 
   @override
-  String get subtype_wineRedSemiSweet => 'Červené — polosladké';
+  String get share_button => 'Sdílet';
+
+  @override
+  String get appearance_title => 'Vzhled';
+
+  @override
+  String get theme_label => 'Téma';
+
+  @override
+  String get theme_light => 'Světlá';
+
+  @override
+  String get theme_system => 'Systém';
+
+  @override
+  String get theme_dark => 'Tmavá';
+
+  @override
+  String get theme_light_note => 'Světlý motiv bude dostupný v budoucí verzi';
+
+  @override
+  String get accent_color_label => 'Barva';
+
+  @override
+  String get badges_title => 'Odznaky';
+
+  @override
+  String badges_unlocked_count(int earned, int total) {
+    return '$earned/$total odemčeno';
+  }
+
+  @override
+  String get badges_tab_all => 'Vše';
+
+  @override
+  String get badges_tab_other => 'Ostatní';
+
+  @override
+  String get badges_view_all => 'Zobrazit vše →';
+
+  @override
+  String get badges_unlocked_label => 'Odemčeno';
 }

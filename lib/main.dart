@@ -5,10 +5,11 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'l10n/app_localizations.dart';
 import 'firebase_options.dart';
-import 'core/constants/app_colors.dart';
 import 'screens/splash/splash_screen.dart';
 import 'providers/auth_provider.dart';
 import 'providers/drinks_provider.dart';
+import 'providers/settings_provider.dart';
+import 'theme/app_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,35 +33,40 @@ class RateMyDrinkApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => DrinksProvider()),
-      ],
-      child: MaterialApp(
-        title: 'RateMyDrink',
-        debugShowCheckedModeBanner: false,
-        localizationsDelegates: const [
-          AppLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: const [
-          Locale('sk'),
-          Locale('cs'),
-          Locale('en'),
-          Locale('de'),
-        ],
-        locale: savedLocale != null ? Locale(savedLocale!) : null,
-        theme: ThemeData(
-          colorScheme: ColorScheme.dark(
-            primary: AppColors.primary,
-            secondary: AppColors.secondary,
-            surface: AppColors.surface,
-          ),
-          scaffoldBackgroundColor: AppColors.background,
-          useMaterial3: true,
+        ChangeNotifierProxyProvider<DrinksProvider, AuthProvider>(
+          create: (_) => AuthProvider(),
+          update: (_, drinksProvider, authProvider) =>
+              (authProvider ?? AuthProvider())
+                ..attachDrinksProvider(drinksProvider),
         ),
-        home: SplashScreen(savedLocale: savedLocale),
+        ChangeNotifierProvider(
+          create: (_) =>
+              SettingsProvider(initialLocale: savedLocale)..loadSettings(),
+        ),
+      ],
+      child: Consumer<SettingsProvider>(
+        builder: (context, settings, _) => MaterialApp(
+          title: 'RateMyDrink',
+          debugShowCheckedModeBanner: false,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: const [
+            Locale('sk'),
+            Locale('cs'),
+            Locale('en'),
+            Locale('de'),
+          ],
+          locale: settings.locale,
+          themeMode: settings.themeMode,
+          theme: AppTheme.light(settings.accentColor),
+          darkTheme: AppTheme.dark(settings.accentColor),
+          home: SplashScreen(savedLocale: savedLocale),
+        ),
       ),
     );
   }

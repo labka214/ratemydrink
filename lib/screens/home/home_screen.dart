@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter/services.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/enums/drink_type.dart';
-import '../../providers/auth_provider.dart';
+import '../../core/utils/category_ui.dart';
+import '../../l10n/app_localizations.dart';
 import '../drinks/drinks_list_screen.dart';
+import '../favorites/favorites_screen.dart';
+import '../profile/profile_screen.dart';
+import '../stats/stats_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final authProvider = context.watch<AuthProvider>();
+    final loc = AppLocalizations.of(context)!;
 
     return Scaffold(
       backgroundColor: AppColors.background,
@@ -27,8 +31,38 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.logout, color: AppColors.textSecondary),
-            onPressed: () => authProvider.signOut(),
+            icon: const Icon(Icons.bar_chart, color: AppColors.textSecondary),
+            tooltip: loc.stats_title,
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const StatsScreen()),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.favorite, color: AppColors.favorite),
+            tooltip: loc.favorites,
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const FavoritesScreen()),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.account_circle,
+                color: AppColors.textSecondary),
+            tooltip: loc.profile_tooltip,
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const ProfileScreen()),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.exit_to_app,
+                color: AppColors.textSecondary),
+            tooltip: loc.exit_app_tooltip,
+            onPressed: () => SystemNavigator.pop(),
           ),
         ],
       ),
@@ -39,11 +73,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             _CategoryButton(type: DrinkType.rum),
             const SizedBox(height: 16),
-            _CategoryButton(type: DrinkType.beer),
-            const SizedBox(height: 16),
             _CategoryButton(type: DrinkType.whiskey),
-            const SizedBox(height: 16),
-            _CategoryButton(type: DrinkType.wine),
           ],
         ),
       ),
@@ -60,12 +90,8 @@ class _CategoryButton extends StatelessWidget {
     switch (type) {
       case DrinkType.rum:
         return AppColors.rumColor;
-      case DrinkType.beer:
-        return AppColors.beerColor;
       case DrinkType.whiskey:
         return AppColors.whiskeyColor;
-      case DrinkType.wine:
-        return AppColors.wineColor;
     }
   }
 
@@ -75,7 +101,7 @@ class _CategoryButton extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: _color.withOpacity(0.85),
+          backgroundColor: _color.withValues(alpha: 0.85),
           foregroundColor: AppColors.textPrimary,
           padding: const EdgeInsets.symmetric(vertical: 20),
           shape: RoundedRectangleBorder(
@@ -90,7 +116,7 @@ class _CategoryButton extends StatelessWidget {
           );
         },
         child: Text(
-          '${type.emoji}   ${type.name[0].toUpperCase()}${type.name.substring(1)}',
+          '${type.emoji}   ${categoryLabel(AppLocalizations.of(context)!, type)}',
           style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
       ),

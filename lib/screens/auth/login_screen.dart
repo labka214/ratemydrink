@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:provider/provider.dart';
 import '../../core/constants/app_colors.dart';
-import '../../services/auth_service.dart';
-import '../home/home_screen.dart';
+import '../../l10n/app_localizations.dart';
+import '../../providers/auth_provider.dart';
+import '../home/main_shell.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -12,30 +13,33 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final AuthService _authService = AuthService();
   bool _isLoading = false;
 
   Future<void> _signIn() async {
     setState(() => _isLoading = true);
 
-    final user = await _authService.signInWithGoogle();
+    // Čaká aj na prvé "zahriatie" dát (viď AuthProvider.signInWithGoogle),
+    // takže spinner beží kým sa nenačítajú prvé dáta z Firestore.
+    final success = await context.read<AuthProvider>().signInWithGoogle();
 
     if (!mounted) return;
     setState(() => _isLoading = false);
 
-    if (user != null) {
+    if (success) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const HomeScreen()),
+        MaterialPageRoute(builder: (_) => const MainShell()),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Prihlásenie zlyhalo. Skús znova.')),
+        SnackBar(content: Text(AppLocalizations.of(context)!.login_error)),
       );
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+
     return Scaffold(
       backgroundColor: AppColors.background,
       body: Center(
@@ -57,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: 12),
               Text(
-                'Prihlás sa a začni hodnotiť',
+                loc.login_subtitle,
                 style: TextStyle(
                   fontSize: 16,
                   color: AppColors.textSecondary,
@@ -82,9 +86,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       'https://www.google.com/favicon.ico',
                       height: 24,
                     ),
-                    label: const Text(
-                      'Prihlásiť sa cez Google',
-                      style: TextStyle(fontSize: 16),
+                    label: Text(
+                      loc.login_google,
+                      style: const TextStyle(fontSize: 16),
                     ),
                     onPressed: _signIn,
                   ),

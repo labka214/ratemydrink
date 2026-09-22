@@ -47,6 +47,7 @@ dependencies:
   # Obrázky z galérie
   image_picker: ^1.1.2
   cached_network_image: ^3.4.1
+  flutter_image_compress: ^2.3.0
 
   # Hviezdičkové hodnotenie
   flutter_rating_bar: ^4.0.1
@@ -62,11 +63,26 @@ dependencies:
   # In-app purchases
   in_app_purchase: ^3.2.0
 
+  # URL launching (for contact screen)
+  url_launcher: ^6.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
 
 flutter:
   generate: true
   uses-material-design: true
+  assets:
+    - assets/icon/app_icon.png
+    - assets/data/drinks_db.json
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#12162800"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"

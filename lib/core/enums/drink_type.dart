@@ -1,19 +1,13 @@
 enum DrinkType {
   rum,
-  beer,
-  whiskey,
-  wine;
+  whiskey;
 
   String get emoji {
     switch (this) {
       case DrinkType.rum:
         return '🥃';
-      case DrinkType.beer:
-        return '🍺';
       case DrinkType.whiskey:
         return '🥃';
-      case DrinkType.wine:
-        return '🍷';
     }
   }
 
@@ -22,12 +16,8 @@ enum DrinkType {
     switch (this) {
       case DrinkType.rum:
         return 'category_rum';
-      case DrinkType.beer:
-        return 'category_beer';
       case DrinkType.whiskey:
         return 'category_whiskey';
-      case DrinkType.wine:
-        return 'category_wine';
     }
   }
 
@@ -39,41 +29,20 @@ enum DrinkType {
     switch (this) {
       case DrinkType.rum:
         return [
+          DrinkSubtype.rumLight,
           DrinkSubtype.rumDark,
-          DrinkSubtype.rumWhite,
-          DrinkSubtype.rumGold,
           DrinkSubtype.rumSpiced,
-          DrinkSubtype.rumFlavoured,
-          DrinkSubtype.rumAged,
-        ];
-      case DrinkType.beer:
-        return [
-          DrinkSubtype.beerLight,
-          DrinkSubtype.beerDark,
-          DrinkSubtype.beerAle,
-          DrinkSubtype.beerLager,
-          DrinkSubtype.beerSpecial,
+          DrinkSubtype.rumAgricole,
+          DrinkSubtype.rumOverproof,
         ];
       case DrinkType.whiskey:
         return [
+          DrinkSubtype.whiskeyScotch,
+          DrinkSubtype.whiskeyIrish,
+          DrinkSubtype.whiskeyBourbon,
+          DrinkSubtype.whiskeyJapanese,
           DrinkSubtype.whiskeySingleMalt,
           DrinkSubtype.whiskeyBlended,
-          DrinkSubtype.whiskeyBourbon,
-          DrinkSubtype.whiskeyScotch,
-          DrinkSubtype.whiskeyFlavoured,
-        ];
-      case DrinkType.wine:
-        return [
-          DrinkSubtype.wineWhiteDry,
-          DrinkSubtype.wineWhiteSemiDry,
-          DrinkSubtype.wineWhiteSemiSweet,
-          DrinkSubtype.wineWhiteSweet,
-          DrinkSubtype.wineRoseDry,
-          DrinkSubtype.wineRoseSemiDry,
-          DrinkSubtype.wineRoseSemiSweet,
-          DrinkSubtype.wineRedDry,
-          DrinkSubtype.wineRedSemiDry,
-          DrinkSubtype.wineRedSemiSweet,
         ];
     }
   }
@@ -81,39 +50,28 @@ enum DrinkType {
 
 enum DrinkSubtype {
   // Rum
+  rumLight,
   rumDark,
-  rumWhite,
-  rumGold,
   rumSpiced,
-  rumFlavoured,
-  rumAged,
-  // Beer
-  beerLight,
-  beerDark,
-  beerAle,
-  beerLager,
-  beerSpecial,
+  rumAgricole,
+  rumOverproof,
   // Whiskey
-  whiskeySingleMalt,
-  whiskeyBlended,
-  whiskeyBourbon,
   whiskeyScotch,
-  whiskeyFlavoured,
-  // Wine
-  wineWhiteDry,
-  wineWhiteSemiDry,
-  wineWhiteSemiSweet,
-  wineWhiteSweet,
-  wineRoseDry,
-  wineRoseSemiDry,
-  wineRoseSemiSweet,
-  wineRedDry,
-  wineRedSemiDry,
-  wineRedSemiSweet;
+  whiskeyIrish,
+  whiskeyBourbon,
+  whiskeyJapanese,
+  whiskeySingleMalt,
+  whiskeyBlended;
 
   // Hodnota ukladaná do Firestore
   String get firestoreValue => name;
 
   // Lokalizačný kľúč
   String get labelKey => 'subtype_$name';
+
+  // Hlavná kategória, do ktorej podtyp patrí
+  DrinkType get category {
+    if (name.startsWith('rum')) return DrinkType.rum;
+    return DrinkType.whiskey;
+  }
 }

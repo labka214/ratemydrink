@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import '../../core/constants/app_colors.dart';
-import '../../core/enums/drink_type.dart';
+import '../../core/utils/subtype_ui.dart';
 import '../../l10n/app_localizations.dart';
 import '../../models/drink_model.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/drinks_provider.dart';
+import '../../widgets/share_card_preview_sheet.dart';
+import '../widgets/star_rating_widget.dart';
 import 'drink_form_screen.dart';
 
 class DrinkDetailScreen extends StatefulWidget {
@@ -28,44 +30,54 @@ class _DrinkDetailScreenState extends State<DrinkDetailScreen> {
     _drink = widget.drink;
   }
 
-  String _getSubtypeLabel(BuildContext context, String? firestoreValue) {
-    if (firestoreValue == null) return '';
-    final loc = AppLocalizations.of(context)!;
-    try {
-      final subtype = DrinkSubtype.values.firstWhere(
-        (s) => s.firestoreValue == firestoreValue,
-      );
-      switch (subtype) {
-        case DrinkSubtype.rumDark: return loc.subtype_rumDark;
-        case DrinkSubtype.rumWhite: return loc.subtype_rumWhite;
-        case DrinkSubtype.rumGold: return loc.subtype_rumGold;
-        case DrinkSubtype.rumSpiced: return loc.subtype_rumSpiced;
-        case DrinkSubtype.rumFlavoured: return loc.subtype_rumFlavoured;
-        case DrinkSubtype.rumAged: return loc.subtype_rumAged;
-        case DrinkSubtype.beerLight: return loc.subtype_beerLight;
-        case DrinkSubtype.beerDark: return loc.subtype_beerDark;
-        case DrinkSubtype.beerAle: return loc.subtype_beerAle;
-        case DrinkSubtype.beerLager: return loc.subtype_beerLager;
-        case DrinkSubtype.beerSpecial: return loc.subtype_beerSpecial;
-        case DrinkSubtype.whiskeySingleMalt: return loc.subtype_whiskeySingleMalt;
-        case DrinkSubtype.whiskeyBlended: return loc.subtype_whiskeyBlended;
-        case DrinkSubtype.whiskeyBourbon: return loc.subtype_whiskeyBourbon;
-        case DrinkSubtype.whiskeyScotch: return loc.subtype_whiskeyScotch;
-        case DrinkSubtype.whiskeyFlavoured: return loc.subtype_whiskeyFlavoured;
-        case DrinkSubtype.wineWhiteDry: return loc.subtype_wineWhiteDry;
-        case DrinkSubtype.wineWhiteSemiDry: return loc.subtype_wineWhiteSemiDry;
-        case DrinkSubtype.wineWhiteSemiSweet: return loc.subtype_wineWhiteSemiSweet;
-        case DrinkSubtype.wineWhiteSweet: return loc.subtype_wineWhiteSweet;
-        case DrinkSubtype.wineRoseDry: return loc.subtype_wineRoseDry;
-        case DrinkSubtype.wineRoseSemiDry: return loc.subtype_wineRoseSemiDry;
-        case DrinkSubtype.wineRoseSemiSweet: return loc.subtype_wineRoseSemiSweet;
-        case DrinkSubtype.wineRedDry: return loc.subtype_wineRedDry;
-        case DrinkSubtype.wineRedSemiDry: return loc.subtype_wineRedSemiDry;
-        case DrinkSubtype.wineRedSemiSweet: return loc.subtype_wineRedSemiSweet;
-      }
-    } catch (_) {
-      return firestoreValue;
+  Future<void> _openShareSheet(AppLocalizations loc) async {
+    // Ak je fotka, dotiahni ju vopred, aby bola v náhľade hneď hotová.
+    final photoUrl = _drink.imageUrl;
+    if (photoUrl != null && photoUrl.isNotEmpty) {
+      await precacheImage(CachedNetworkImageProvider(photoUrl), context);
     }
+    if (!mounted) return;
+
+    await showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (ctx) => ShareCardPreviewSheet(
+        drinkName: _drink.name,
+        subtype: _getSubtypeLabel(context, _drink.subtype),
+        country: _drink.country,
+        manufacturer: _drink.manufacturer,
+        rating: _drink.rating,
+        photoUrl: _drink.imageUrl,
+        category: _drink.type.firestoreValue,
+      ),
+    );
+  }
+
+  Future<void> _updateRating(double newRating) async {
+    final userId = context.read<AuthProvider>().userId;
+    if (userId == null || _drink.id == null) return;
+
+    final previous = _drink;
+    final updated = _drink.copyWith(rating: newRating);
+    setState(() => _drink = updated);
+
+    try {
+      await context.read<DrinksProvider>().updateDrink(userId, updated);
+    } catch (e) {
+      if (mounted) {
+        setState(() => _drink = previous);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Chyba: $e')),
+        );
+      }
+    }
+  }
+
+  String _getSubtypeLabel(BuildContext context, String? firestoreValue) {
+    final subtype = subtypeFromFirestoreValue(firestoreValue);
+    if (subtype == null) return firestoreValue ?? '';
+    return subtypeLabel(AppLocalizations.of(context)!, subtype);
   }
 
   @override
@@ -87,7 +99,12 @@ class _DrinkDetailScreenState extends State<DrinkDetailScreen> {
         iconTheme: const IconThemeData(color: AppColors.textSecondary),
         actions: [
           IconButton(
-            icon: const Icon(Icons.edit, color: AppColors.primary),
+            icon: const Icon(Icons.share, color: AppColors.textSecondary),
+            tooltip: loc.share_tooltip,
+            onPressed: () => _openShareSheet(loc),
+          ),
+          IconButton(
+            icon: Icon(Icons.edit, color: AppColors.primary),
             onPressed: () async {
               await Navigator.of(context).push(
                 MaterialPageRoute(
@@ -101,7 +118,7 @@ class _DrinkDetailScreenState extends State<DrinkDetailScreen> {
               if (context.mounted) {
                 final updated = context
                     .read<DrinksProvider>()
-                    .allDrinks  // ← zmenené z .drinks na .allDrinks
+                    .allDrinks // ← zmenené z .drinks na .allDrinks
                     .where((d) => d.id == _drink.id)
                     .firstOrNull;
                 if (updated != null) {
@@ -119,18 +136,52 @@ class _DrinkDetailScreenState extends State<DrinkDetailScreen> {
         ],
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.fromLTRB(
+          20,
+          20,
+          20,
+          20 + MediaQuery.of(context).padding.bottom,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Fotka
+            if (_drink.imageUrl != null) ...[
+              ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: CachedNetworkImage(
+                  imageUrl: _drink.imageUrl!,
+                  width: double.infinity,
+                  height: 220,
+                  fit: BoxFit.cover,
+                  placeholder: (context, url) => Container(
+                    height: 220,
+                    color: AppColors.surface,
+                    child: Center(
+                      child: CircularProgressIndicator(
+                        color: AppColors.primary,
+                      ),
+                    ),
+                  ),
+                  errorWidget: (context, url, error) => Container(
+                    height: 220,
+                    color: AppColors.surface,
+                    child: const Icon(
+                      Icons.broken_image,
+                      color: AppColors.textSecondary,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+            ],
+
             // Hodnotenie
             Center(
-              child: RatingBarIndicator(
+              child: StarRatingWidget(
                 rating: _drink.rating,
-                itemBuilder: (_, __) =>
-                    const Icon(Icons.star_rounded, color: AppColors.star),
-                itemCount: 5,
                 itemSize: 40,
+                onRatingUpdate: _updateRating,
               ),
             ),
             Center(
@@ -161,6 +212,12 @@ class _DrinkDetailScreenState extends State<DrinkDetailScreen> {
                 icon: Icons.location_on,
                 label: loc.field_country,
                 value: _drink.country!,
+              ),
+            if (_drink.manufacturer != null && _drink.manufacturer!.isNotEmpty)
+              _DetailRow(
+                icon: Icons.factory,
+                label: loc.manufacturer,
+                value: _drink.manufacturer!,
               ),
             if (_drink.alcohol != null)
               _DetailRow(

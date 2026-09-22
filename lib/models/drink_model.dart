@@ -7,6 +7,7 @@ class DrinkModel {
   final String name;
   final double rating;       // 0.5 – 5.0 (po pol-hviezdičke)
   final String? country;
+  final String? manufacturer;
   final double? alcohol;
   final String? subtype;     // napr. "dark", "blond", "red"...
   final DateTime date;
@@ -24,6 +25,7 @@ class DrinkModel {
     required this.name,
     required this.rating,
     this.country,
+    this.manufacturer,
     this.alcohol,
     this.subtype,
     required this.date,
@@ -48,6 +50,7 @@ class DrinkModel {
       name: data['name'] ?? '',
       rating: (data['rating'] as num?)?.toDouble() ?? 0.0,
       country: data['country'],
+      manufacturer: data['manufacturer'],
       alcohol: (data['alcohol'] as num?)?.toDouble(),
       subtype: data['subtype'],
       date: (data['date'] as Timestamp).toDate(),
@@ -68,6 +71,7 @@ class DrinkModel {
       'name': name,
       'rating': rating,
       'country': country,
+      'manufacturer': manufacturer,
       'alcohol': alcohol,
       'subtype': subtype,
       'date': Timestamp.fromDate(date),
@@ -88,6 +92,7 @@ class DrinkModel {
     String? name,
     double? rating,
     String? country,
+    String? manufacturer,
     double? alcohol,
     String? subtype,
     DateTime? date,
@@ -105,6 +110,7 @@ class DrinkModel {
       name: name ?? this.name,
       rating: rating ?? this.rating,
       country: country ?? this.country,
+      manufacturer: manufacturer ?? this.manufacturer,
       alcohol: alcohol ?? this.alcohol,
       subtype: subtype ?? this.subtype,
       date: date ?? this.date,

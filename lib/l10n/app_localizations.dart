@@ -117,23 +117,11 @@ abstract class AppLocalizations {
   /// **'Rum'**
   String get category_rum;
 
-  /// No description provided for @category_beer.
-  ///
-  /// In en, this message translates to:
-  /// **'Beer'**
-  String get category_beer;
-
   /// No description provided for @category_whiskey.
   ///
   /// In en, this message translates to:
   /// **'Whiskey'**
   String get category_whiskey;
-
-  /// No description provided for @category_wine.
-  ///
-  /// In en, this message translates to:
-  /// **'Wine'**
-  String get category_wine;
 
   /// No description provided for @btn_save.
   ///
@@ -195,6 +183,12 @@ abstract class AppLocalizations {
   /// **'Country'**
   String get field_country;
 
+  /// No description provided for @manufacturer.
+  ///
+  /// In en, this message translates to:
+  /// **'Producer'**
+  String get manufacturer;
+
   /// No description provided for @field_alcohol.
   ///
   /// In en, this message translates to:
@@ -237,6 +231,18 @@ abstract class AppLocalizations {
   /// **'Image'**
   String get field_image;
 
+  /// No description provided for @btn_pick_image.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose photo'**
+  String get btn_pick_image;
+
+  /// No description provided for @image_upload_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to upload image'**
+  String get image_upload_error;
+
   /// No description provided for @field_currency.
   ///
   /// In en, this message translates to:
@@ -261,23 +267,179 @@ abstract class AppLocalizations {
   /// **'Sign in with Google'**
   String get login_google;
 
+  /// No description provided for @login_subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in and start rating'**
+  String get login_subtitle;
+
+  /// No description provided for @login_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-in failed. Please try again.'**
+  String get login_error;
+
   /// No description provided for @logout.
   ///
   /// In en, this message translates to:
   /// **'Sign out'**
   String get logout;
 
-  /// No description provided for @free_limit_reached.
+  /// No description provided for @profile_logout.
   ///
   /// In en, this message translates to:
-  /// **'You have reached the limit of 50 records.'**
-  String get free_limit_reached;
+  /// **'Sign out'**
+  String get profile_logout;
+
+  /// No description provided for @profile_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get profile_title;
+
+  /// No description provided for @profile_tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'View profile'**
+  String get profile_tooltip;
+
+  /// No description provided for @profile_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get profile_name;
+
+  /// No description provided for @profile_email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get profile_email;
+
+  /// No description provided for @profile_phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile'**
+  String get profile_phone;
+
+  /// No description provided for @profile_save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get profile_save;
+
+  /// No description provided for @profile_my_ratings.
+  ///
+  /// In en, this message translates to:
+  /// **'My ratings'**
+  String get profile_my_ratings;
+
+  /// No description provided for @profile_language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get profile_language;
+
+  /// No description provided for @support_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Support RateMyDrink'**
+  String get support_title;
+
+  /// No description provided for @support_thank_you.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for using RateMyDrink! This app is free for everyone. Your donation helps cover the cost of cloud storage and keeps the app running.'**
+  String get support_thank_you;
+
+  /// No description provided for @support_donate_2.
+  ///
+  /// In en, this message translates to:
+  /// **'€2'**
+  String get support_donate_2;
+
+  /// No description provided for @support_donate_5.
+  ///
+  /// In en, this message translates to:
+  /// **'€5'**
+  String get support_donate_5;
+
+  /// No description provided for @support_donate_10.
+  ///
+  /// In en, this message translates to:
+  /// **'€10'**
+  String get support_donate_10;
+
+  /// No description provided for @support_coming_soon.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming soon — payment not configured yet'**
+  String get support_coming_soon;
+
+  /// No description provided for @support_tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Support us'**
+  String get support_tooltip;
+
+  /// No description provided for @support_contact_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact us'**
+  String get support_contact_title;
+
+  /// No description provided for @support_type_suggestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggestion'**
+  String get support_type_suggestion;
+
+  /// No description provided for @support_type_bug.
+  ///
+  /// In en, this message translates to:
+  /// **'Bug'**
+  String get support_type_bug;
+
+  /// No description provided for @support_type_other.
+  ///
+  /// In en, this message translates to:
+  /// **'Other message'**
+  String get support_type_other;
+
+  /// No description provided for @support_message_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Your message...'**
+  String get support_message_hint;
+
+  /// No description provided for @support_send.
+  ///
+  /// In en, this message translates to:
+  /// **'Send'**
+  String get support_send;
+
+  /// No description provided for @support_message_sent.
+  ///
+  /// In en, this message translates to:
+  /// **'Message sent, thank you!'**
+  String get support_message_sent;
 
   /// No description provided for @export_csv.
   ///
   /// In en, this message translates to:
   /// **'Export CSV'**
   String get export_csv;
+
+  /// No description provided for @export_csv_tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Export records (CSV)'**
+  String get export_csv_tooltip;
+
+  /// No description provided for @export_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to export data'**
+  String get export_error;
 
   /// No description provided for @stats_title.
   ///
@@ -345,6 +507,18 @@ abstract class AppLocalizations {
   /// **'Favourites'**
   String get favorites;
 
+  /// No description provided for @no_favorites.
+  ///
+  /// In en, this message translates to:
+  /// **'No favourites yet'**
+  String get no_favorites;
+
+  /// No description provided for @exit_app_tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit app'**
+  String get exit_app_tooltip;
+
   /// No description provided for @no_drinks.
   ///
   /// In en, this message translates to:
@@ -357,23 +531,17 @@ abstract class AppLocalizations {
   /// **'Search by name...'**
   String get search_hint;
 
+  /// No description provided for @subtype_rumLight.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get subtype_rumLight;
+
   /// No description provided for @subtype_rumDark.
   ///
   /// In en, this message translates to:
   /// **'Dark'**
   String get subtype_rumDark;
-
-  /// No description provided for @subtype_rumWhite.
-  ///
-  /// In en, this message translates to:
-  /// **'White'**
-  String get subtype_rumWhite;
-
-  /// No description provided for @subtype_rumGold.
-  ///
-  /// In en, this message translates to:
-  /// **'Gold'**
-  String get subtype_rumGold;
 
   /// No description provided for @subtype_rumSpiced.
   ///
@@ -381,47 +549,41 @@ abstract class AppLocalizations {
   /// **'Spiced'**
   String get subtype_rumSpiced;
 
-  /// No description provided for @subtype_rumFlavoured.
+  /// No description provided for @subtype_rumAgricole.
   ///
   /// In en, this message translates to:
-  /// **'Flavoured'**
-  String get subtype_rumFlavoured;
+  /// **'Agricole'**
+  String get subtype_rumAgricole;
 
-  /// No description provided for @subtype_rumAged.
+  /// No description provided for @subtype_rumOverproof.
   ///
   /// In en, this message translates to:
-  /// **'Aged'**
-  String get subtype_rumAged;
+  /// **'Overproof'**
+  String get subtype_rumOverproof;
 
-  /// No description provided for @subtype_beerLight.
+  /// No description provided for @subtype_whiskeyScotch.
   ///
   /// In en, this message translates to:
-  /// **'Light'**
-  String get subtype_beerLight;
+  /// **'Scotch'**
+  String get subtype_whiskeyScotch;
 
-  /// No description provided for @subtype_beerDark.
+  /// No description provided for @subtype_whiskeyIrish.
   ///
   /// In en, this message translates to:
-  /// **'Dark'**
-  String get subtype_beerDark;
+  /// **'Irish'**
+  String get subtype_whiskeyIrish;
 
-  /// No description provided for @subtype_beerAle.
+  /// No description provided for @subtype_whiskeyBourbon.
   ///
   /// In en, this message translates to:
-  /// **'Ale'**
-  String get subtype_beerAle;
+  /// **'Bourbon'**
+  String get subtype_whiskeyBourbon;
 
-  /// No description provided for @subtype_beerLager.
+  /// No description provided for @subtype_whiskeyJapanese.
   ///
   /// In en, this message translates to:
-  /// **'Lager'**
-  String get subtype_beerLager;
-
-  /// No description provided for @subtype_beerSpecial.
-  ///
-  /// In en, this message translates to:
-  /// **'Special'**
-  String get subtype_beerSpecial;
+  /// **'Japanese'**
+  String get subtype_whiskeyJapanese;
 
   /// No description provided for @subtype_whiskeySingleMalt.
   ///
@@ -435,83 +597,161 @@ abstract class AppLocalizations {
   /// **'Blended'**
   String get subtype_whiskeyBlended;
 
-  /// No description provided for @subtype_whiskeyBourbon.
+  /// No description provided for @nav_home.
   ///
   /// In en, this message translates to:
-  /// **'Bourbon'**
-  String get subtype_whiskeyBourbon;
+  /// **'Home'**
+  String get nav_home;
 
-  /// No description provided for @subtype_whiskeyScotch.
+  /// No description provided for @navContact.
   ///
   /// In en, this message translates to:
-  /// **'Scotch'**
-  String get subtype_whiskeyScotch;
+  /// **'Contact'**
+  String get navContact;
 
-  /// No description provided for @subtype_whiskeyFlavoured.
+  /// No description provided for @leaderboard.
   ///
   /// In en, this message translates to:
-  /// **'Flavoured'**
-  String get subtype_whiskeyFlavoured;
+  /// **'Leaderboard'**
+  String get leaderboard;
 
-  /// No description provided for @subtype_wineWhiteDry.
+  /// No description provided for @leaderboard_tooltip.
   ///
   /// In en, this message translates to:
-  /// **'White — Dry'**
-  String get subtype_wineWhiteDry;
+  /// **'Leaderboard'**
+  String get leaderboard_tooltip;
 
-  /// No description provided for @subtype_wineWhiteSemiDry.
+  /// No description provided for @leaderboard_empty_title.
   ///
   /// In en, this message translates to:
-  /// **'White — Semi-dry'**
-  String get subtype_wineWhiteSemiDry;
+  /// **'No ratings yet'**
+  String get leaderboard_empty_title;
 
-  /// No description provided for @subtype_wineWhiteSemiSweet.
+  /// No description provided for @leaderboard_empty_subtitle.
   ///
   /// In en, this message translates to:
-  /// **'White — Semi-sweet'**
-  String get subtype_wineWhiteSemiSweet;
+  /// **'Add the first rum or whiskey!'**
+  String get leaderboard_empty_subtitle;
 
-  /// No description provided for @subtype_wineWhiteSweet.
+  /// No description provided for @leaderboard_ratings.
   ///
   /// In en, this message translates to:
-  /// **'White — Sweet'**
-  String get subtype_wineWhiteSweet;
+  /// **'{count} ratings'**
+  String leaderboard_ratings(int count);
 
-  /// No description provided for @subtype_wineRoseDry.
+  /// No description provided for @leaderboard_error.
   ///
   /// In en, this message translates to:
-  /// **'Rosé — Dry'**
-  String get subtype_wineRoseDry;
+  /// **'Failed to load'**
+  String get leaderboard_error;
 
-  /// No description provided for @subtype_wineRoseSemiDry.
+  /// No description provided for @share_tooltip.
   ///
   /// In en, this message translates to:
-  /// **'Rosé — Semi-dry'**
-  String get subtype_wineRoseSemiDry;
+  /// **'Share rating'**
+  String get share_tooltip;
 
-  /// No description provided for @subtype_wineRoseSemiSweet.
+  /// No description provided for @share_error.
   ///
   /// In en, this message translates to:
-  /// **'Rosé — Semi-sweet'**
-  String get subtype_wineRoseSemiSweet;
+  /// **'Sharing failed. Please try again.'**
+  String get share_error;
 
-  /// No description provided for @subtype_wineRedDry.
+  /// No description provided for @share_message.
   ///
   /// In en, this message translates to:
-  /// **'Red — Dry'**
-  String get subtype_wineRedDry;
+  /// **'Rating {name} on RateMyDrink 🥃'**
+  String share_message(String name);
 
-  /// No description provided for @subtype_wineRedSemiDry.
+  /// No description provided for @share_preview_title.
   ///
   /// In en, this message translates to:
-  /// **'Red — Semi-dry'**
-  String get subtype_wineRedSemiDry;
+  /// **'Share card preview'**
+  String get share_preview_title;
 
-  /// No description provided for @subtype_wineRedSemiSweet.
+  /// No description provided for @share_button.
   ///
   /// In en, this message translates to:
-  /// **'Red — Semi-sweet'**
-  String get subtype_wineRedSemiSweet;
+  /// **'Share'**
+  String get share_button;
+
+  /// No description provided for @appearance_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get appearance_title;
+
+  /// No description provided for @theme_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get theme_label;
+
+  /// No description provided for @theme_light.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get theme_light;
+
+  /// No description provided for @theme_system.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get theme_system;
+
+  /// No description provided for @theme_dark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get theme_dark;
+
+  /// No description provided for @theme_light_note.
+  ///
+  /// In en, this message translates to:
+  /// **'Light theme will be available in a future version'**
+  String get theme_light_note;
+
+  /// No description provided for @accent_color_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Color'**
+  String get accent_color_label;
+
+  /// No description provided for @badges_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Badges'**
+  String get badges_title;
+
+  /// No description provided for @badges_unlocked_count.
+  ///
+  /// In en, this message translates to:
+  /// **'{earned}/{total} unlocked'**
+  String badges_unlocked_count(int earned, int total);
+
+  /// No description provided for @badges_tab_all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get badges_tab_all;
+
+  /// No description provided for @badges_tab_other.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get badges_tab_other;
+
+  /// No description provided for @badges_view_all.
+  ///
+  /// In en, this message translates to:
+  /// **'View all →'**
+  String get badges_view_all;
+
+  /// No description provided for @badges_unlocked_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlocked'**
+  String get badges_unlocked_label;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

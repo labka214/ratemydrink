@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../language/language_screen.dart';
 import '../auth/login_screen.dart';
-import '../home/home_screen.dart';
+import '../home/main_shell.dart';
 import '../../core/constants/app_colors.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final user = FirebaseAuth.instance.currentUser;
     if (user != null) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const HomeScreen()),
+        MaterialPageRoute(builder: (_) => const MainShell()),
       );
     } else {
       Navigator.of(context).pushReplacement(

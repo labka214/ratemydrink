@@ -1,14 +1,67 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/drink_model.dart';
 import '../core/enums/drink_type.dart';
-import '../core/constants/app_constants.dart';
+import 'storage_service.dart';
 
 class FirestoreService {
   final FirebaseFirestore _db = FirebaseFirestore.instance;
+  final StorageService _storageService = StorageService();
 
   // Referencia na kolekciu nápojov konkrétneho používateľa
   CollectionReference<Map<String, dynamic>> _drinksRef(String userId) {
     return _db.collection('users').doc(userId).collection('drinks');
+  }
+
+  // Referencia na dokument profilu používateľa
+  DocumentReference<Map<String, dynamic>> _userRef(String userId) {
+    return _db.collection('users').doc(userId);
+  }
+
+  // Referencia na kolekciu verejných hodnotení (bez poznámok/fotiek/osobných údajov)
+  CollectionReference<Map<String, dynamic>> get _publicRatingsRef =>
+      _db.collection('public_ratings');
+
+  // Deterministické ID verejného záznamu — jeden na dvojicu (používateľ, názov nápoja)
+  String _publicRatingId(String userId, String drinkName) {
+    final slug = drinkName
+        .trim()
+        .toLowerCase()
+        .replaceAll('/', '_')
+        .replaceAll(' ', '_');
+    return '${userId}_$slug';
+  }
+
+  // Vytvor/prepíš verejný (anonymizovaný) záznam hodnotenia pre rebríček
+  Future<void> _upsertPublicRating(String userId, DrinkModel drink) async {
+    final id = _publicRatingId(userId, drink.name);
+    await _publicRatingsRef.doc(id).set({
+      'drinkName': drink.name,
+      'category': drink.type.firestoreValue,
+      'subtype': drink.subtype ?? '',
+      'country': drink.country ?? '',
+      'manufacturer': drink.manufacturer ?? '',
+      'rating': drink.rating,
+      'userId': userId,
+    }, SetOptions(merge: false));
+  }
+
+  // Zmaž verejný záznam hodnotenia (ak existuje)
+  Future<void> _deletePublicRating(String userId, String drinkName) async {
+    final id = _publicRatingId(userId, drinkName);
+    await _publicRatingsRef.doc(id).delete();
+  }
+
+  // Vygeneruj nové ID záznamu (bez zápisu) — potrebné pred uploadom fotky
+  String newDrinkId(String userId) {
+    return _drinksRef(userId).doc().id;
+  }
+
+  // Jednorazovo načíta VŠETKY nápoje používateľa naprieč kategóriami
+  // (napr. pre výpočet odznakov, ktoré potrebujú kompletný obraz, nie len
+  // aktuálne sledovanú kategóriu z DrinksProvider).
+  Future<List<DrinkModel>> getAllDrinksOnce(String userId) async {
+    final snapshot = await _drinksRef(userId).get();
+    return snapshot.docs.map((doc) => DrinkModel.fromFirestore(doc)).toList();
   }
 
   // Načítaj všetky nápoje daného typu (real-time stream)
@@ -18,46 +71,70 @@ class FirestoreService {
         .orderBy('date', descending: true)
         .snapshots()
         .map((snapshot) =>
-        snapshot.docs.map((doc) => DrinkModel.fromFirestore(doc)).toList());
+            snapshot.docs.map((doc) => DrinkModel.fromFirestore(doc)).toList());
   }
 
-  // Počet nápojov daného typu (pre FREE limit)
-  Future<int> getDrinksCount(String userId, DrinkType type) async {
+  // Načítaj všetky obľúbené nápoje naprieč typmi (real-time stream)
+  Stream<List<DrinkModel>> getFavoritesStream(String userId) {
+    return _drinksRef(userId)
+        .where('isFavorite', isEqualTo: true)
+        .orderBy('date', descending: true)
+        .snapshots()
+        .map((snapshot) =>
+            snapshot.docs.map((doc) => DrinkModel.fromFirestore(doc)).toList());
+  }
+
+  // Jednorazové načítanie obľúbených (bez realtime streamu)
+  Future<List<DrinkModel>> getFavoritesOnce(String userId) async {
     final snapshot = await _drinksRef(userId)
-        .where('type', isEqualTo: type.firestoreValue)
-        .count()
+        .where('isFavorite', isEqualTo: true)
+        .orderBy('date', descending: true)
         .get();
-    return snapshot.count ?? 0;
-  }
-
-  // Skontroluj či používateľ dosiahol FREE limit
-  Future<bool> isFreeLimitReached(String userId, DrinkType type) async {
-    final count = await getDrinksCount(userId, type);
-    return count >= AppConstants.freeTierLimit;
+    return snapshot.docs.map((doc) => DrinkModel.fromFirestore(doc)).toList();
   }
 
   // Pridaj nový nápoj
   Future<void> addDrink(String userId, DrinkModel drink) async {
-    await _drinksRef(userId).add(drink.toFirestore());
+    final id = drink.id ?? newDrinkId(userId);
+    await _drinksRef(userId).doc(id).set(drink.toFirestore());
+    await _upsertPublicRating(userId, drink);
   }
 
   // Aktualizuj existujúci nápoj
   Future<void> updateDrink(String userId, DrinkModel drink) async {
     if (drink.id == null) return;
-    await _drinksRef(userId).doc(drink.id).update(drink.toFirestore());
+    final docRef = _drinksRef(userId).doc(drink.id);
+
+    // Ak sa zmenil názov, verejný záznam má iné (nové) ID — starý treba zmazať,
+    // inak by v public_ratings zostal osirotený duplicitný záznam.
+    final previous = await docRef.get();
+    final previousName = previous.data()?['name'] as String?;
+
+    await docRef.update(drink.toFirestore());
+
+    if (previousName != null && previousName != drink.name) {
+      await _deletePublicRating(userId, previousName);
+    }
+    await _upsertPublicRating(userId, drink);
   }
 
-  // Vymaž nápoj
+  // Vymaž nápoj (vrátane fotky v Storage a verejného záznamu z rebríčka)
   Future<void> deleteDrink(String userId, String drinkId) async {
+    final doc = await _drinksRef(userId).doc(drinkId).get();
+    final name = doc.data()?['name'] as String?;
+
     await _drinksRef(userId).doc(drinkId).delete();
+    await _storageService.deleteDrinkImage(userId, drinkId);
+
+    if (name != null) {
+      await _deletePublicRating(userId, name);
+    }
   }
 
   // Prepni obľúbené
   Future<void> toggleFavorite(
       String userId, String drinkId, bool isFavorite) async {
-    await _drinksRef(userId)
-        .doc(drinkId)
-        .update({'isFavorite': isFavorite});
+    await _drinksRef(userId).doc(drinkId).update({'isFavorite': isFavorite});
   }
 
   // Načítaj jeden nápoj podľa ID
@@ -76,13 +153,12 @@ class FirestoreService {
     if (snapshot.docs.isEmpty) return {};
 
     final drinks =
-    snapshot.docs.map((doc) => DrinkModel.fromFirestore(doc)).toList();
+        snapshot.docs.map((doc) => DrinkModel.fromFirestore(doc)).toList();
 
     final avgRating =
         drinks.map((d) => d.rating).reduce((a, b) => a + b) / drinks.length;
 
-    final bestDrink =
-    drinks.reduce((a, b) => a.rating >= b.rating ? a : b);
+    final bestDrink = drinks.reduce((a, b) => a.rating >= b.rating ? a : b);
 
     final drinksWithPrice = drinks.where((d) => d.price != null).toList();
     final mostExpensive = drinksWithPrice.isEmpty
@@ -95,5 +171,57 @@ class FirestoreService {
       'mostExpensive': mostExpensive,
       'totalCount': drinks.length,
     };
+  }
+
+  // Počet hodnotení v každej kategórii
+  Future<Map<DrinkType, int>> getCategoryCounts(String userId) async {
+    final results = await Future.wait(DrinkType.values.map((type) async {
+      final snapshot = await _drinksRef(userId)
+          .where('type', isEqualTo: type.firestoreValue)
+          .count()
+          .get();
+      return MapEntry(type, snapshot.count ?? 0);
+    }));
+    return Map.fromEntries(results);
+  }
+
+  // Načítaj profil používateľa (meno, email, telefón)
+  Future<Map<String, dynamic>?> getUserProfile(String userId) async {
+    final doc = await _userRef(userId).get();
+    return doc.data();
+  }
+
+  // Ulož/aktualizuj profil používateľa
+  Future<void> saveUserProfile(
+    String userId, {
+    String? displayName,
+    String? email,
+    String? phone,
+  }) async {
+    await _userRef(userId).set({
+      'displayName': displayName,
+      'email': email,
+      'phone': phone,
+    }, SetOptions(merge: true));
+  }
+
+  // Odošli spätnú väzbu / kontaktný formulár
+  Future<void> submitFeedback({
+    String? userId,
+    required String type,
+    required String message,
+    required String name,
+    required String email,
+    required String appVersion,
+  }) async {
+    await _db.collection('feedback').add({
+      'userId': userId,
+      'type': type,
+      'message': message,
+      'name': name,
+      'email': email,
+      'timestamp': FieldValue.serverTimestamp(),
+      'appVersion': appVersion,
+    });
   }
 }

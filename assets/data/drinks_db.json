@@ -1,0 +1,3089 @@
+[
+  {
+    "name": "Diplomatico Reserva Exclusiva",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Destilerías Unidas"
+  },
+  {
+    "name": "Diplomatico Planas",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Venezuela",
+    "manufacturer": "Destilerías Unidas"
+  },
+  {
+    "name": "Diplomatico Mantuano",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Destilerías Unidas"
+  },
+  {
+    "name": "Diplomatico Single Vintage 2007",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Destilerías Unidas"
+  },
+  {
+    "name": "Diplomatico Ambassador",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Destilerías Unidas"
+  },
+  {
+    "name": "Diplomatico Rum Blanco",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Venezuela",
+    "manufacturer": "Destilerías Unidas"
+  },
+  {
+    "name": "Plantation XO 20th Anniversary",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation 3 Stars",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Original Dark",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Stiggins' Fancy Pineapple",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation O.F.T.D. Overproof",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Gran Añejo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Barbados 5 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Jamaica 2002",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Trinidad 2009",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Trinidad",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Fiji 2009",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Fidži",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Guyana 2003",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guyana",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Plantation Islay Finish",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Maison Ferrand"
+  },
+  {
+    "name": "Appleton Estate 8 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Appleton Estate"
+  },
+  {
+    "name": "Appleton Estate 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Appleton Estate"
+  },
+  {
+    "name": "Appleton Estate 15 Year Black River",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Appleton Estate"
+  },
+  {
+    "name": "Appleton Estate 21 Year Nassau Valley",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Appleton Estate"
+  },
+  {
+    "name": "Appleton Estate Signature",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Appleton Estate"
+  },
+  {
+    "name": "Appleton Estate Joy Anniversary Blend",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Appleton Estate"
+  },
+  {
+    "name": "Appleton Estate 12 Rare Casks",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Appleton Estate"
+  },
+  {
+    "name": "Bacardi Superior",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Carta Negra",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Añejo Cuatro",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Reserva Ocho",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi 10 Años",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Gran Reserva Limitada",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Facundo Neo",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Facundo Eximo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Facundo Exquisito",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Bacardi Facundo Paraiso",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Havana Club 3 Years",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Kuba",
+    "manufacturer": "Havana Club"
+  },
+  {
+    "name": "Havana Club 7 Years",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kuba",
+    "manufacturer": "Havana Club"
+  },
+  {
+    "name": "Havana Club Añejo 15",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kuba",
+    "manufacturer": "Havana Club"
+  },
+  {
+    "name": "Havana Club Selección de Maestros",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kuba",
+    "manufacturer": "Havana Club"
+  },
+  {
+    "name": "Havana Club Máximo Extra Añejo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kuba",
+    "manufacturer": "Havana Club"
+  },
+  {
+    "name": "Havana Club Union",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kuba",
+    "manufacturer": "Havana Club"
+  },
+  {
+    "name": "Mount Gay Eclipse",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Mount Gay Distilleries"
+  },
+  {
+    "name": "Mount Gay Black Barrel",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Mount Gay Distilleries"
+  },
+  {
+    "name": "Mount Gay XO",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Mount Gay Distilleries"
+  },
+  {
+    "name": "Mount Gay XO The Peat Smoke",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Mount Gay Distilleries"
+  },
+  {
+    "name": "Mount Gay 1703 Old Cask Selection",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Mount Gay Distilleries"
+  },
+  {
+    "name": "Foursquare 2013",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Spiced Rum",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Empery",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Sagacity",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Criterion",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Principia",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Triptych",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Indelible",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Foursquare Premise",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Hampden Estate 8 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Hampden Estate"
+  },
+  {
+    "name": "Hampden Estate HLCF Classic",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Jamaica",
+    "manufacturer": "Hampden Estate"
+  },
+  {
+    "name": "Hampden Estate Fire",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Jamaica",
+    "manufacturer": "Hampden Estate"
+  },
+  {
+    "name": "Rum Fire",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Jamaica",
+    "manufacturer": "Hampden Estate"
+  },
+  {
+    "name": "Hampden Estate Rum Pure Single Rum",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Hampden Estate"
+  },
+  {
+    "name": "Worthy Park Single Estate",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Worthy Park Estate"
+  },
+  {
+    "name": "Rum Bar White Overproof",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Jamaica",
+    "manufacturer": "Worthy Park Estate"
+  },
+  {
+    "name": "Rum Bar Gold",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Worthy Park Estate"
+  },
+  {
+    "name": "El Dorado 3 Year",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Guyana",
+    "manufacturer": "Demerara Distillers"
+  },
+  {
+    "name": "El Dorado 8 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guyana",
+    "manufacturer": "Demerara Distillers"
+  },
+  {
+    "name": "El Dorado 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guyana",
+    "manufacturer": "Demerara Distillers"
+  },
+  {
+    "name": "El Dorado 15 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guyana",
+    "manufacturer": "Demerara Distillers"
+  },
+  {
+    "name": "El Dorado 21 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guyana",
+    "manufacturer": "Demerara Distillers"
+  },
+  {
+    "name": "El Dorado 25 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guyana",
+    "manufacturer": "Demerara Distillers"
+  },
+  {
+    "name": "Angostura 1919",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Trinidad",
+    "manufacturer": "Angostura"
+  },
+  {
+    "name": "Angostura 1824",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Trinidad",
+    "manufacturer": "Angostura"
+  },
+  {
+    "name": "Angostura 7 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Trinidad",
+    "manufacturer": "Angostura"
+  },
+  {
+    "name": "Angostura 5 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Trinidad",
+    "manufacturer": "Angostura"
+  },
+  {
+    "name": "Angostura Caribbean Rum",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Trinidad",
+    "manufacturer": "Angostura"
+  },
+  {
+    "name": "Don Papa Rum",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Filipíny",
+    "manufacturer": "Bleeding Heart Rum Company"
+  },
+  {
+    "name": "Don Papa 10 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Filipíny",
+    "manufacturer": "Bleeding Heart Rum Company"
+  },
+  {
+    "name": "Don Papa Baroko",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Filipíny",
+    "manufacturer": "Bleeding Heart Rum Company"
+  },
+  {
+    "name": "Don Papa Masskara",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Filipíny",
+    "manufacturer": "Bleeding Heart Rum Company"
+  },
+  {
+    "name": "Doorly's 3 Year",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Barbados",
+    "manufacturer": "R.L. Seale & Co."
+  },
+  {
+    "name": "Doorly's 5 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "R.L. Seale & Co."
+  },
+  {
+    "name": "Doorly's 8 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "R.L. Seale & Co."
+  },
+  {
+    "name": "Doorly's 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "R.L. Seale & Co."
+  },
+  {
+    "name": "Doorly's XO",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "R.L. Seale & Co."
+  },
+  {
+    "name": "Flor de Caña 4 Year",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Nikaragua",
+    "manufacturer": "Compañía Licorera de Nicaragua"
+  },
+  {
+    "name": "Flor de Caña 7 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Nikaragua",
+    "manufacturer": "Compañía Licorera de Nicaragua"
+  },
+  {
+    "name": "Flor de Caña 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Nikaragua",
+    "manufacturer": "Compañía Licorera de Nicaragua"
+  },
+  {
+    "name": "Flor de Caña 18 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Nikaragua",
+    "manufacturer": "Compañía Licorera de Nicaragua"
+  },
+  {
+    "name": "Flor de Caña 25 Year Centenario",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Nikaragua",
+    "manufacturer": "Compañía Licorera de Nicaragua"
+  },
+  {
+    "name": "Barceló Añejo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Ron Barceló"
+  },
+  {
+    "name": "Barceló Imperial",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Ron Barceló"
+  },
+  {
+    "name": "Barceló Gran Añejo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Ron Barceló"
+  },
+  {
+    "name": "Barceló Imperial Onyx",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Ron Barceló"
+  },
+  {
+    "name": "Barceló Imperial Premium Blend 30 Aniversario",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Ron Barceló"
+  },
+  {
+    "name": "Brugal Añejo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Brugal"
+  },
+  {
+    "name": "Brugal Extra Viejo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Brugal"
+  },
+  {
+    "name": "Brugal 1888",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Brugal"
+  },
+  {
+    "name": "Brugal Papá Andrés",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Brugal"
+  },
+  {
+    "name": "Ron Zacapa 23",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guatemala",
+    "manufacturer": "Industrias Licoreras de Guatemala"
+  },
+  {
+    "name": "Ron Zacapa XO",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guatemala",
+    "manufacturer": "Industrias Licoreras de Guatemala"
+  },
+  {
+    "name": "Ron Botran 18 Solera",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guatemala",
+    "manufacturer": "Industrias Licoreras de Guatemala"
+  },
+  {
+    "name": "Ron Botran 15",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guatemala",
+    "manufacturer": "Industrias Licoreras de Guatemala"
+  },
+  {
+    "name": "Ron Botran Reserva",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guatemala",
+    "manufacturer": "Industrias Licoreras de Guatemala"
+  },
+  {
+    "name": "Santa Teresa 1796",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Santa Teresa"
+  },
+  {
+    "name": "Santa Teresa Claro",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Venezuela",
+    "manufacturer": "Santa Teresa"
+  },
+  {
+    "name": "Santa Teresa Gran Reserva",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Santa Teresa"
+  },
+  {
+    "name": "Pampero Aniversario",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Pampero"
+  },
+  {
+    "name": "Pampero Especial",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Pampero"
+  },
+  {
+    "name": "Centenario 9 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kostarika",
+    "manufacturer": "Centenario"
+  },
+  {
+    "name": "Centenario 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kostarika",
+    "manufacturer": "Centenario"
+  },
+  {
+    "name": "Centenario 20 Fundación",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kostarika",
+    "manufacturer": "Centenario"
+  },
+  {
+    "name": "Centenario 25 Edición Limitada",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kostarika",
+    "manufacturer": "Centenario"
+  },
+  {
+    "name": "Abuelo 7 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Varela Hermanos"
+  },
+  {
+    "name": "Abuelo 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Varela Hermanos"
+  },
+  {
+    "name": "Abuelo XV Napoleon",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Varela Hermanos"
+  },
+  {
+    "name": "Abuelo Centuria",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Varela Hermanos"
+  },
+  {
+    "name": "Zafra Master Reserve 21",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Varela Hermanos"
+  },
+  {
+    "name": "Dictador 20 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kolumbia",
+    "manufacturer": "Dictador"
+  },
+  {
+    "name": "Dictador 40 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kolumbia",
+    "manufacturer": "Dictador"
+  },
+  {
+    "name": "Dictador Best of 1977",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kolumbia",
+    "manufacturer": "Dictador"
+  },
+  {
+    "name": "Dictador Best of 1980",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kolumbia",
+    "manufacturer": "Dictador"
+  },
+  {
+    "name": "Dictador XO Perpetual",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kolumbia",
+    "manufacturer": "Dictador"
+  },
+  {
+    "name": "Dictador XO Insolent",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kolumbia",
+    "manufacturer": "Dictador"
+  },
+  {
+    "name": "Rhum Clément VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum Clément"
+  },
+  {
+    "name": "Rhum Clément XO",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum Clément"
+  },
+  {
+    "name": "Rhum Clément Canne Bleue",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum Clément"
+  },
+  {
+    "name": "Rhum Clément Première Canne",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum Clément"
+  },
+  {
+    "name": "Rhum J.M Gold",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum J.M"
+  },
+  {
+    "name": "Rhum J.M XO",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum J.M"
+  },
+  {
+    "name": "Rhum J.M VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum J.M"
+  },
+  {
+    "name": "Trois Rivières Blanc",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Trois Rivières"
+  },
+  {
+    "name": "Trois Rivières VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Trois Rivières"
+  },
+  {
+    "name": "Rhum Bally VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Rhum Bally"
+  },
+  {
+    "name": "HSE VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "HSE"
+  },
+  {
+    "name": "HSE XO",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "HSE"
+  },
+  {
+    "name": "Depaz Blue Cane Ambré",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Depaz"
+  },
+  {
+    "name": "Depaz VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Depaz"
+  },
+  {
+    "name": "Depaz XO",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Depaz"
+  },
+  {
+    "name": "Saint James Cuvée 1765",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Saint James"
+  },
+  {
+    "name": "Saint James Hors d'Age",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Saint James"
+  },
+  {
+    "name": "Karukera VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Guadeloupe",
+    "manufacturer": "Karukera"
+  },
+  {
+    "name": "Neisson Blanc",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Neisson Distillery"
+  },
+  {
+    "name": "Neisson VSOP",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Martinik",
+    "manufacturer": "Neisson Distillery"
+  },
+  {
+    "name": "Clairin Sajous",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Haiti",
+    "manufacturer": "Velier"
+  },
+  {
+    "name": "Clairin Le Rocher",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Haiti",
+    "manufacturer": "Velier"
+  },
+  {
+    "name": "Clairin Vaval",
+    "category": "rum",
+    "subtype": "rumAgricole",
+    "country": "Haiti",
+    "manufacturer": "Velier"
+  },
+  {
+    "name": "Barbancourt 3 Star",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Haiti",
+    "manufacturer": "Rhum Barbancourt"
+  },
+  {
+    "name": "Barbancourt Réserve Spéciale 8 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Haiti",
+    "manufacturer": "Rhum Barbancourt"
+  },
+  {
+    "name": "Barbancourt Réserve du Domaine 15 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Haiti",
+    "manufacturer": "Rhum Barbancourt"
+  },
+  {
+    "name": "Captain Morgan Original Spiced",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "USA",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Captain Morgan Black Spiced",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "USA",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Kraken Black Spiced Rum",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "Trinidad",
+    "manufacturer": "Proximo Spirits"
+  },
+  {
+    "name": "Sailor Jerry Spiced Rum",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "USA",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Canerock",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "Jamaica",
+    "manufacturer": "Stock Spirits"
+  },
+  {
+    "name": "Bumbu Original",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Sovereign Brands"
+  },
+  {
+    "name": "Bumbu XO",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Sovereign Brands"
+  },
+  {
+    "name": "Malibu Original",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "Barbados",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Gosling's Black Seal",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Bermudy",
+    "manufacturer": "Gosling Brothers"
+  },
+  {
+    "name": "Foursquare Spiced Rum",
+    "category": "rum",
+    "subtype": "rumSpiced",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Wray & Nephew White Overproof",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Jamaica",
+    "manufacturer": "J. Wray & Nephew"
+  },
+  {
+    "name": "Wray & Nephew Black Label",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "J. Wray & Nephew"
+  },
+  {
+    "name": "Smith & Cross",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Jamaica",
+    "manufacturer": "Hayman Distillers"
+  },
+  {
+    "name": "Sunset Very Strong",
+    "category": "rum",
+    "subtype": "rumOverproof",
+    "country": "Sv. Vincent",
+    "manufacturer": "SVG Distillers"
+  },
+  {
+    "name": "Piquerito",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "Kuba",
+    "manufacturer": "Piquerito"
+  },
+  {
+    "name": "Legendario Elixir de Cuba",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kuba",
+    "manufacturer": "Legendario"
+  },
+  {
+    "name": "Old Monk 7 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "India",
+    "manufacturer": "Mohan Meakin"
+  },
+  {
+    "name": "Bundaberg Original",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Austrália",
+    "manufacturer": "Bundaberg Distilling Company"
+  },
+  {
+    "name": "Bundaberg Master Distillers",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Austrália",
+    "manufacturer": "Bundaberg Distilling Company"
+  },
+  {
+    "name": "Pyrat XO Reserve",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Anguilla",
+    "manufacturer": "Patrón Spirits"
+  },
+  {
+    "name": "Ron del Barrilito 2 Star",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Edmundo B. Fernández"
+  },
+  {
+    "name": "Ron del Barrilito 3 Star",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Edmundo B. Fernández"
+  },
+  {
+    "name": "DonQ Gran Añejo",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Serrallés"
+  },
+  {
+    "name": "DonQ Reserva 7",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Puerto Rico",
+    "manufacturer": "Serrallés"
+  },
+  {
+    "name": "Kirk and Sweeney 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "3 Badge Beverage"
+  },
+  {
+    "name": "Kirk and Sweeney 18 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "3 Badge Beverage"
+  },
+  {
+    "name": "Kirk and Sweeney 23 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "3 Badge Beverage"
+  },
+  {
+    "name": "Zaya Gran Reserva",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guatemala",
+    "manufacturer": "Proximo Spirits"
+  },
+  {
+    "name": "Ron Centenario 25",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Kostarika",
+    "manufacturer": "Centenario"
+  },
+  {
+    "name": "Rum Nation Barbados 10 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Rum Nation"
+  },
+  {
+    "name": "Rum Nation Demerara 25 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Guyana",
+    "manufacturer": "Rum Nation"
+  },
+  {
+    "name": "Rum Nation Jamaica 7 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Rum Nation"
+  },
+  {
+    "name": "Rum Nation Panama 18 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Rum Nation"
+  },
+  {
+    "name": "Carupano 21 Solera",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Venezuela",
+    "manufacturer": "Carupano"
+  },
+  {
+    "name": "Oliver & Oliver Opthimus 15",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Oliver & Oliver"
+  },
+  {
+    "name": "Oliver & Oliver Opthimus 18",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Oliver & Oliver"
+  },
+  {
+    "name": "Oliver & Oliver Opthimus 25",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Dominikánska republika",
+    "manufacturer": "Oliver & Oliver"
+  },
+  {
+    "name": "Malecon 15 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Malecon"
+  },
+  {
+    "name": "Malecon 18 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Malecon"
+  },
+  {
+    "name": "Malecon 21 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Malecon"
+  },
+  {
+    "name": "Mezan Jamaica XO",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Jamaica",
+    "manufacturer": "Mezan"
+  },
+  {
+    "name": "Mezan Panama",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Panama",
+    "manufacturer": "Mezan"
+  },
+  {
+    "name": "St. Nicholas Abbey 5 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "St. Nicholas Abbey"
+  },
+  {
+    "name": "St. Nicholas Abbey 10 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "St. Nicholas Abbey"
+  },
+  {
+    "name": "St. Nicholas Abbey 18 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "St. Nicholas Abbey"
+  },
+  {
+    "name": "Rum Sixty Six 12 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Rum Sixty Six 21 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Barbados",
+    "manufacturer": "Foursquare Distillery"
+  },
+  {
+    "name": "Privateer New England Rum",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "USA",
+    "manufacturer": "Privateer Rum"
+  },
+  {
+    "name": "Montanya Platino",
+    "category": "rum",
+    "subtype": "rumLight",
+    "country": "USA",
+    "manufacturer": "Montanya Distillers"
+  },
+  {
+    "name": "Koloa Dark Rum",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "USA",
+    "manufacturer": "Kauaʻi Fine Rum"
+  },
+  {
+    "name": "Cartavio XO",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Peru",
+    "manufacturer": "Cartavio S.A."
+  },
+  {
+    "name": "Millonario XO",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Peru",
+    "manufacturer": "Destilería La Caravedo"
+  },
+  {
+    "name": "Mocambo 10 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Mexiko",
+    "manufacturer": "Grupo Industrial Veracruz"
+  },
+  {
+    "name": "Mocambo 15 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Mexiko",
+    "manufacturer": "Grupo Industrial Veracruz"
+  },
+  {
+    "name": "Mocambo 20 Year",
+    "category": "rum",
+    "subtype": "rumDark",
+    "country": "Mexiko",
+    "manufacturer": "Grupo Industrial Veracruz"
+  },
+  {
+    "name": "Johnnie Walker Red Label",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Johnnie Walker Black Label",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Johnnie Walker Double Black",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Johnnie Walker Green Label",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Johnnie Walker Gold Label Reserve",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Johnnie Walker Blue Label",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Johnnie Walker King George V",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Glenfiddich 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Glenfiddich 15 Year Solera",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Glenfiddich 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Glenfiddich 21 Year Gran Reserva",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Glenfiddich 26 Year Excellence",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Macallan 12 Year Sherry Oak",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Macallan 12 Year Double Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Macallan 15 Year Double Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Macallan 18 Year Sherry Oak",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Macallan 18 Year Double Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Macallan 25 Year Sherry Oak",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Macallan Rare Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Macallan Classic Cut",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Glenlivet 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Glenlivet 14 Year Cognac Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Glenlivet 15 Year French Oak Reserve",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Glenlivet 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Glenlivet 21 Year Archive",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Glenlivet 25 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Balvenie 12 Year DoubleWood",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Balvenie 14 Year Caribbean Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Balvenie 17 Year DoubleWood",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Balvenie 21 Year PortWood",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Balvenie 25 Year Rare Marriages",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Highland Park 12 Year Viking Honour",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Highland Park 15 Year Viking Heart",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Highland Park 18 Year Viking Pride",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Highland Park 25 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Laphroaig 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Laphroaig 10 Year Cask Strength",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Laphroaig Quarter Cask",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Laphroaig Triple Wood",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Laphroaig 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Laphroaig 25 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Lagavulin 8 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Lagavulin 16 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Lagavulin Distillers Edition",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Ardbeg 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Ardbeg Uigeadail",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Ardbeg Corryvreckan",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Ardbeg An Oa",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Ardbeg Wee Beastie",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Bowmore 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Bowmore 15 Year Darkest",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Bowmore 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Bowmore 25 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Oban 14 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Oban 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Oban Little Bay",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Dalmore 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Whyte & Mackay"
+  },
+  {
+    "name": "Dalmore 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Whyte & Mackay"
+  },
+  {
+    "name": "Dalmore 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Whyte & Mackay"
+  },
+  {
+    "name": "Dalmore King Alexander III",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Whyte & Mackay"
+  },
+  {
+    "name": "Dalmore Cigar Malt Reserve",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Whyte & Mackay"
+  },
+  {
+    "name": "Glenmorangie Original 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Glenmorangie Lasanta 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Glenmorangie Quinta Ruban 14 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Glenmorangie Nectar d'Or 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Glenmorangie 18 Year Extremely Rare",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Glenmorangie Signet",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "LVMH"
+  },
+  {
+    "name": "Aberlour 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Aberlour 14 Year Double Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Aberlour 16 Year Double Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Aberlour A'Bunadh",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Springbank 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "J&A Mitchell"
+  },
+  {
+    "name": "Springbank 12 Year Cask Strength",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "J&A Mitchell"
+  },
+  {
+    "name": "Springbank 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "J&A Mitchell"
+  },
+  {
+    "name": "Springbank 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "J&A Mitchell"
+  },
+  {
+    "name": "Longrow Peated",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "J&A Mitchell"
+  },
+  {
+    "name": "Hazelburn 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "J&A Mitchell"
+  },
+  {
+    "name": "Bruichladdich Classic Laddie",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Rémy Cointreau"
+  },
+  {
+    "name": "Bruichladdich The Organic",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Rémy Cointreau"
+  },
+  {
+    "name": "Port Charlotte 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Rémy Cointreau"
+  },
+  {
+    "name": "Octomore 13.1",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Rémy Cointreau"
+  },
+  {
+    "name": "Monkey Shoulder",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Grant's Triple Wood",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Grant's Sherry Cask Reserve",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Chivas Regal 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Chivas Regal 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Chivas Regal 25 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Chivas Regal XV",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Ballantine's 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Ballantine's 17 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Ballantine's 21 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Pernod Ricard"
+  },
+  {
+    "name": "Famous Grouse",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Black Grouse",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Edrington"
+  },
+  {
+    "name": "Dewar's 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Dewar's 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Dewar's 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Škótsko",
+    "manufacturer": "Bacardi"
+  },
+  {
+    "name": "Jameson Irish Whiskey",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Jameson Caskmates IPA Edition",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Jameson Black Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Jameson 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Redbreast 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Redbreast 12 Year Cask Strength",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Redbreast 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Redbreast 21 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Green Spot",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Yellow Spot 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Red Spot 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Blue Spot 7 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Powers Gold Label",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Powers John's Lane 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Irish Distillers"
+  },
+  {
+    "name": "Bushmills Original",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Bushmills Distillery"
+  },
+  {
+    "name": "Bushmills Black Bush",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Bushmills Distillery"
+  },
+  {
+    "name": "Bushmills 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Bushmills Distillery"
+  },
+  {
+    "name": "Bushmills 16 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Bushmills Distillery"
+  },
+  {
+    "name": "Bushmills 21 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Bushmills Distillery"
+  },
+  {
+    "name": "Tullamore D.E.W.",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Tullamore D.E.W. 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Tullamore D.E.W. XO",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "William Grant & Sons"
+  },
+  {
+    "name": "Teeling Small Batch",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Teeling Whiskey Company"
+  },
+  {
+    "name": "Teeling Single Grain",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Teeling Whiskey Company"
+  },
+  {
+    "name": "Teeling Single Malt",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Teeling Whiskey Company"
+  },
+  {
+    "name": "Teeling 24 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Teeling Whiskey Company"
+  },
+  {
+    "name": "Writers' Tears Copper Pot",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Walsh Whiskey"
+  },
+  {
+    "name": "Writers' Tears Red Head",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Walsh Whiskey"
+  },
+  {
+    "name": "Connemara Peated",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Connemara 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Knappogue Castle 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Castle Brands"
+  },
+  {
+    "name": "Dingle Single Malt",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Dingle Distillery"
+  },
+  {
+    "name": "Waterford Gaia 1.2",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Waterford Distillery"
+  },
+  {
+    "name": "Waterford Cuvée ISIN",
+    "category": "whiskey",
+    "subtype": "whiskeyIrish",
+    "country": "Írsko",
+    "manufacturer": "Waterford Distillery"
+  },
+  {
+    "name": "Jack Daniel's Old No. 7",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "Jack Daniel's Single Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "Jack Daniel's Gentleman Jack",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "Jack Daniel's Tennessee Honey",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "Woodford Reserve",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "Woodford Reserve Double Oaked",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "Woodford Reserve Master's Collection",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "Maker's Mark",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Maker's Mark 46",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Maker's Mark Cask Strength",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Jim Beam White",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Jim Beam Black",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Jim Beam Double Oak",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Knob Creek 9 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Knob Creek Single Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Knob Creek 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Basil Hayden's",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Basil Hayden's Dark Rye",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Beam Suntory"
+  },
+  {
+    "name": "Buffalo Trace",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Sazerac Company"
+  },
+  {
+    "name": "Eagle Rare 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Sazerac Company"
+  },
+  {
+    "name": "Blanton's Original",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Sazerac Company"
+  },
+  {
+    "name": "Blanton's Gold Edition",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Sazerac Company"
+  },
+  {
+    "name": "Blanton's Straight from the Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Sazerac Company"
+  },
+  {
+    "name": "W.L. Weller Special Reserve",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Sazerac Company"
+  },
+  {
+    "name": "W.L. Weller 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Sazerac Company"
+  },
+  {
+    "name": "Pappy Van Winkle's 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Old Rip Van Winkle Distillery"
+  },
+  {
+    "name": "Pappy Van Winkle's 20 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Old Rip Van Winkle Distillery"
+  },
+  {
+    "name": "Van Winkle Special Reserve 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Old Rip Van Winkle Distillery"
+  },
+  {
+    "name": "Bulleit Bourbon",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Bulleit Rye",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Bulleit 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Diageo"
+  },
+  {
+    "name": "Wild Turkey 101",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Campari Group"
+  },
+  {
+    "name": "Wild Turkey Rare Breed",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Campari Group"
+  },
+  {
+    "name": "Wild Turkey Russell's Reserve 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Campari Group"
+  },
+  {
+    "name": "Wild Turkey Russell's Reserve Single Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Campari Group"
+  },
+  {
+    "name": "Four Roses Single Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Kirin Brewery"
+  },
+  {
+    "name": "Four Roses Small Batch",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Kirin Brewery"
+  },
+  {
+    "name": "Four Roses Small Batch Select",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Kirin Brewery"
+  },
+  {
+    "name": "Elijah Craig Small Batch",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Heaven Hill"
+  },
+  {
+    "name": "Elijah Craig Barrel Proof",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Heaven Hill"
+  },
+  {
+    "name": "Elijah Craig 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Heaven Hill"
+  },
+  {
+    "name": "Evan Williams Black",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Heaven Hill"
+  },
+  {
+    "name": "Evan Williams Single Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Heaven Hill"
+  },
+  {
+    "name": "Heaven Hill 7 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Heaven Hill"
+  },
+  {
+    "name": "Michter's US*1 Bourbon",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Michter's Distillery"
+  },
+  {
+    "name": "Michter's US*1 Rye",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Michter's Distillery"
+  },
+  {
+    "name": "Michter's Toasted Barrel Finish",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Michter's Distillery"
+  },
+  {
+    "name": "Michter's 10 Year Bourbon",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Michter's Distillery"
+  },
+  {
+    "name": "Angel's Envy",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Angel's Envy"
+  },
+  {
+    "name": "Angel's Envy Cask Strength",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Angel's Envy"
+  },
+  {
+    "name": "Whistle Pig 10 Year Rye",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "WhistlePig Farm"
+  },
+  {
+    "name": "Whistle Pig 12 Year Old World",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "WhistlePig Farm"
+  },
+  {
+    "name": "Whistle Pig 15 Year Vermont Oak",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "WhistlePig Farm"
+  },
+  {
+    "name": "High West Double Rye",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "High West Distillery"
+  },
+  {
+    "name": "High West Rendezvous Rye",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "High West Distillery"
+  },
+  {
+    "name": "Widow Jane 10 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyBourbon",
+    "country": "USA",
+    "manufacturer": "Widow Jane Distillery"
+  },
+  {
+    "name": "Yamazaki 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Yamazaki 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Yamazaki 25 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Hakushu 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Hakushu 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Hibiki Japanese Harmony",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Hibiki 17 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Hibiki 21 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Hibiki 30 Year",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Suntory Toki",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Suntory"
+  },
+  {
+    "name": "Nikka Whisky From The Barrel",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Nikka Whisky"
+  },
+  {
+    "name": "Nikka Coffey Grain",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Nikka Whisky"
+  },
+  {
+    "name": "Nikka Coffey Malt",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Nikka Whisky"
+  },
+  {
+    "name": "Nikka Pure Malt Black",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Nikka Whisky"
+  },
+  {
+    "name": "Nikka Yoichi Single Malt",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Nikka Whisky"
+  },
+  {
+    "name": "Nikka Miyagikyo Single Malt",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Nikka Whisky"
+  },
+  {
+    "name": "Nikka Days",
+    "category": "whiskey",
+    "subtype": "whiskeyJapanese",
+    "country": "Japonsko",
+    "manufacturer": "Nikka Whisky"
+  },
+  {
+    "name": "Kavalan Solist Vinho Barrique",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Taiwan",
+    "manufacturer": "King Car Group"
+  },
+  {
+    "name": "Kavalan Solist Ex-Bourbon",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Taiwan",
+    "manufacturer": "King Car Group"
+  },
+  {
+    "name": "Kavalan Classic Single Malt",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Taiwan",
+    "manufacturer": "King Car Group"
+  },
+  {
+    "name": "Kavalan Distillery Select",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Taiwan",
+    "manufacturer": "King Car Group"
+  },
+  {
+    "name": "Amrut Fusion",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "India",
+    "manufacturer": "Amrut Distilleries"
+  },
+  {
+    "name": "Amrut Single Malt",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "India",
+    "manufacturer": "Amrut Distilleries"
+  },
+  {
+    "name": "Amrut Intermediate Sherry",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "India",
+    "manufacturer": "Amrut Distilleries"
+  },
+  {
+    "name": "Paul John Edited",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "India",
+    "manufacturer": "Paul John Distillery"
+  },
+  {
+    "name": "Paul John Bold",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "India",
+    "manufacturer": "Paul John Distillery"
+  },
+  {
+    "name": "Paul John Classic Select Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "India",
+    "manufacturer": "Paul John Distillery"
+  },
+  {
+    "name": "Sullivans Cove French Oak",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Austrália",
+    "manufacturer": "Tasmania Distillery"
+  },
+  {
+    "name": "Sullivans Cove American Oak",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Austrália",
+    "manufacturer": "Tasmania Distillery"
+  },
+  {
+    "name": "Starward Nova",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Austrália",
+    "manufacturer": "Starward Whisky"
+  },
+  {
+    "name": "Starward Two-Fold",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Austrália",
+    "manufacturer": "Starward Whisky"
+  },
+  {
+    "name": "Archie Rose White Rye",
+    "category": "whiskey",
+    "subtype": "whiskeyBlended",
+    "country": "Austrália",
+    "manufacturer": "Archie Rose Distilling Co."
+  },
+  {
+    "name": "Glenfarclas 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "George & J.G. Grant"
+  },
+  {
+    "name": "Glenfarclas 25 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "George & J.G. Grant"
+  },
+  {
+    "name": "Glenfarclas 105 Cask Strength",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "George & J.G. Grant"
+  },
+  {
+    "name": "Glen Grant 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Campari Group"
+  },
+  {
+    "name": "Glen Grant 15 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Campari Group"
+  },
+  {
+    "name": "Tomatin 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Tomatin Distillery"
+  },
+  {
+    "name": "Tomatin 18 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Tomatin Distillery"
+  },
+  {
+    "name": "Aberfeldy 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "John Dewar & Sons"
+  },
+  {
+    "name": "Aberfeldy 21 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "John Dewar & Sons"
+  },
+  {
+    "name": "Auchentoshan Three Wood",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Morrison Bowmore"
+  },
+  {
+    "name": "Auchentoshan 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Morrison Bowmore"
+  },
+  {
+    "name": "Glen Scotia Double Cask",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Glen Scotia"
+  },
+  {
+    "name": "Kilchoman Machir Bay",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Kilchoman Distillery"
+  },
+  {
+    "name": "Kilchoman Sanaig",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Kilchoman Distillery"
+  },
+  {
+    "name": "BenRiach 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "BenRiach The Smoky Ten",
+    "category": "whiskey",
+    "subtype": "whiskeyScotch",
+    "country": "Škótsko",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "GlenDronach 12 Year",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "GlenDronach 15 Year Revival",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "GlenDronach 18 Year Allardice",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Brown-Forman"
+  },
+  {
+    "name": "GlenDronach 21 Year Parliament",
+    "category": "whiskey",
+    "subtype": "whiskeySingleMalt",
+    "country": "Škótsko",
+    "manufacturer": "Brown-Forman"
+  }
+]

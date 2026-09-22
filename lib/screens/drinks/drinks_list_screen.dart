@@ -5,6 +5,7 @@ import '../../core/enums/drink_type.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/drinks_provider.dart';
+import '../../services/export_service.dart';
 import '../widgets/drink_card.dart';
 import 'drink_form_screen.dart';
 import 'drink_detail_screen.dart';
@@ -21,17 +22,34 @@ class DrinksListScreen extends StatefulWidget {
 
 class _DrinksListScreenState extends State<DrinksListScreen> {
   final TextEditingController _searchController = TextEditingController();
+  final ExportService _exportService = ExportService();
   String _searchQuery = '';
 
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      final userId = context.read<AuthProvider>().userId;
-      if (userId != null) {
-        context.read<DrinksProvider>().loadDrinks(userId, widget.drinkType);
+  Future<void> _exportCsv(
+    AppLocalizations loc,
+    DrinksProvider drinksProvider,
+  ) async {
+    final drinks = drinksProvider.drinks;
+    if (drinks.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(loc.no_drinks)),
+      );
+      return;
+    }
+
+    try {
+      await _exportService.exportDrinks(
+        drinks: drinks,
+        fileName: 'ratemydrink_${widget.drinkType.name}',
+        shareText: loc.export_csv,
+      );
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(loc.export_error)),
+        );
       }
-    });
+    }
   }
 
   @override
@@ -44,13 +62,27 @@ class _DrinksListScreenState extends State<DrinksListScreen> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final drinksProvider = context.watch<DrinksProvider>();
-    final userId = context.read<AuthProvider>().userId;
+    // watch (nie read): hneď po Google prihlásení môže authStateChanges
+    // (viď AuthProvider) doraziť s malým oneskorením za navigáciou na túto
+    // obrazovku. Pri read() by userId ostal null navždy a loadDrinks by sa
+    // nikdy nezavolalo → nekonečný spinner. Pri watch() sa obrazovka
+    // prekreslí hneď ako userId dorazí a načítanie sa spustí dodatočne.
+    final userId = context.watch<AuthProvider>().userId;
+
+    if (userId != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        // loadDrinks má vlastný dedup guard (rovnaký userId+type sa
+        // preskočí), takže opakované volanie pri každom rebuilde je bezpečné.
+        context.read<DrinksProvider>().loadDrinks(userId, widget.drinkType);
+      });
+    }
 
     final allDrinks = drinksProvider.drinks
         .where((d) => d.type == widget.drinkType)
         .where((d) =>
-    _searchQuery.isEmpty ||
-        d.name.toLowerCase().contains(_searchQuery.toLowerCase()))
+            _searchQuery.isEmpty ||
+            d.name.toLowerCase().contains(_searchQuery.toLowerCase()))
         .toList();
 
     return Scaffold(
@@ -68,18 +100,29 @@ class _DrinksListScreenState extends State<DrinksListScreen> {
         iconTheme: const IconThemeData(color: AppColors.textSecondary),
         actions: [
           IconButton(
+            icon: const Icon(Icons.file_download_outlined,
+                color: AppColors.textSecondary),
+            tooltip: loc.export_csv_tooltip,
+            onPressed: () => _exportCsv(loc, drinksProvider),
+          ),
+          IconButton(
             icon: const Icon(Icons.tune, color: AppColors.textSecondary),
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (_) => const DrinkFilterScreen(),
+                  builder: (_) =>
+                      DrinkFilterScreen(drinkType: widget.drinkType),
                 ),
               );
             },
           ),
           IconButton(
-            icon: const Icon(Icons.add, color: AppColors.primary),
+            icon: Icon(Icons.add, color: AppColors.primary),
             onPressed: () {
+              // Bez forceRefresh: DrinksProvider už na tento typ počúva
+              // realtime stream, ktorý pridaný záznam premietne sám —
+              // vynútený reload by len zbytočne zrušil a znova naštartoval
+              // stream a spôsobil krátke bliknutie zoznamu.
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => DrinkFormScreen(drinkType: widget.drinkType),
@@ -101,7 +144,7 @@ class _DrinksListScreenState extends State<DrinksListScreen> {
                 hintText: loc.search_hint,
                 hintStyle: const TextStyle(color: AppColors.textSecondary),
                 prefixIcon:
-                const Icon(Icons.search, color: AppColors.textSecondary),
+                    const Icon(Icons.search, color: AppColors.textSecondary),
                 filled: true,
                 fillColor: AppColors.surface,
                 border: OutlineInputBorder(
@@ -116,35 +159,42 @@ class _DrinksListScreenState extends State<DrinksListScreen> {
           // Zoznam
           Expanded(
             child: drinksProvider.isLoading
-                ? const Center(
-              child: CircularProgressIndicator(color: AppColors.primary),
-            )
-                : allDrinks.isEmpty
                 ? Center(
-              child: Text(
-                loc.no_drinks,
-                style: const TextStyle(
-                    color: AppColors.textSecondary),
-              ),
-            )
-                : ListView.builder(
-              padding: const EdgeInsets.all(12),
-              itemCount: allDrinks.length,
-              itemBuilder: (context, index) {
-                final drink = allDrinks[index];
-                return DrinkCard(
-                  drink: drink,
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) =>
-                            DrinkDetailScreen(drink: drink),
-                      ),
-                    );
-                  },
-                  onFavoriteToggle: () {
-                    if (userId != null && drink.id != null) {
-                      context.read<DrinksProvider>().toggleFavorite(
+                    child: CircularProgressIndicator(color: AppColors.primary),
+                  )
+                : allDrinks.isEmpty
+                    ? Center(
+                        child: Text(
+                          loc.no_drinks,
+                          style:
+                              const TextStyle(color: AppColors.textSecondary),
+                        ),
+                      )
+                    : ListView.builder(
+                        padding: EdgeInsets.fromLTRB(
+                          12,
+                          12,
+                          12,
+                          12 + MediaQuery.of(context).padding.bottom,
+                        ),
+                        itemCount: allDrinks.length,
+                        itemBuilder: (context, index) {
+                          final drink = allDrinks[index];
+                          return DrinkCard(
+                            drink: drink,
+                            onTap: () {
+                              // Rovnako bez forceRefresh — úpravu/vymazanie záznamu na
+                              // detaile premietne existujúci realtime stream.
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (_) =>
+                                      DrinkDetailScreen(drink: drink),
+                                ),
+                              );
+                            },
+                            onFavoriteToggle: () {
+                              if (userId != null && drink.id != null) {
+                                context.read<DrinksProvider>().toggleFavorite(
                                       userId,
                                       drink.id!,
                                       !drink.isFavorite,

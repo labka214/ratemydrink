@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import '../../core/constants/app_colors.dart';
+import '../../core/utils/category_ui.dart';
 import '../../models/drink_model.dart';
 
 class DrinkCard extends StatelessWidget {
@@ -141,7 +142,7 @@ class DrinkCard extends StatelessWidget {
         color: AppColors.background,
         borderRadius: BorderRadius.circular(8),
       ),
-      child: const Icon(Icons.local_bar, color: AppColors.textSecondary),
+      child: Icon(categoryIcon(drink.type), color: AppColors.textSecondary),
     );
   }
 }
